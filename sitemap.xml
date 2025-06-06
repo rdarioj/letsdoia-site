@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal en español -->
+  <url>
+    <loc>https://letsdoia.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <!-- Página en inglés -->
+  <url>
+    <loc>https://letsdoia.com/en/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <!-- Página en italiano -->
+  <url>
+    <loc>https://letsdoia.com/it/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <!-- Puedes agregar más URLs si tienes otras páginas importantes -->
+</urlset>

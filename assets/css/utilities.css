@@ -1,0 +1,35 @@
+/* ----------- UTILITIES.CSS ----------- */
+
+/* Helpers */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }
+.pt-2 { padding-top: 2rem; }
+.pb-2 { padding-bottom: 2rem; }
+.fw-bold { font-weight: 700; }
+.fw-normal { font-weight: 400; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .services, .portfolio, .logos, .steps, .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section.alt {
+    padding: 24px 8px;
+  }
+  .section-title {
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 600px) {
+  .section {
+    padding: 0 8px;
+  }
+  .cta-btn {
+    padding: 16px 32px;
+    font-size: 1.1em;
+  }
+}

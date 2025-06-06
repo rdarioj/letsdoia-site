@@ -1,0 +1,60 @@
+/* ----------- BASE.CSS ----------- */
+
+/* Reset básico y box-sizing */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu,
+nav, output, ruby, section, summary, time,
+mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background: #1e252d;
+  color: #212931;
+  font-family: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #06b6d4;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+:root {
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+  --bg-light: #f3f8fd;
+  --bg-alt: #eaf3fb;
+  --text-dark: #181a1b;
+  --text-light: #fff;
+  --radius: 18px;
+  --shadow: 0 4px 24px rgba(37, 99, 235, 0.07);
+}

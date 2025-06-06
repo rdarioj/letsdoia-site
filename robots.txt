@@ -1,0 +1,17 @@
+# robots.txt para letsdoia.com
+
+# Permitir a todos los robots acceder a todo el sitio
+User-agent: *
+Disallow:
+
+# (Opcional) Bloquear carpetas privadas o de backend si existen
+# Disallow: /admin/
+# Disallow: /cgi-bin/
+# Disallow: /tmp/
+
+# (Opcional) Permitir acceso a los archivos CSS, JS e imágenes
+Allow: /assets/
+Allow: /images/
+
+# (Opcional) Indicar la ubicación del sitemap
+Sitemap: https://letsdoia.com/sitemap.xml

@@ -1,0 +1,192 @@
+/* ----------- SECTIONS.CSS ----------- */
+
+:root {
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+  --bg-light: #f3f8fd;
+  --bg-alt: #eaf3fb;
+  --text-dark: #181a1b;
+  --shadow: 0 4px 24px rgba(37, 99, 235, 0.07);
+  --border-radius: 18px;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2.2em;
+  margin-bottom: 0.7em;
+  color: var(--primary);
+  text-align: center;
+}
+
+.section.alt {
+  background: var(--bg-alt);
+  color: var(--text-dark);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section.alt .section-title { 
+  color: var(--primary); 
+}
+
+.section.alt .service, 
+.section.alt .portfolio-item, 
+.section.alt .step, 
+.section.alt .testimonial {
+  background: #fff;
+  color: var(--text-dark);
+}
+
+.section.alt .service h3, 
+.section.alt .portfolio-item h3, 
+.section.alt .testimonial h3 {
+  color: var(--secondary);
+}
+
+/* Logos section */
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.logos img {
+  width: 120px;
+  margin: 0 18px;
+  opacity: 0.85;
+  filter: grayscale(1);
+  transition: filter 0.2s, opacity 0.2s;
+}
+
+.logos img:hover { 
+  filter: none; 
+  opacity: 1; 
+}
+
+/* Content sections */
+.services, .portfolio, .steps, .testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.service, .portfolio-item, .step, .testimonial {
+  background: var(--bg-light);
+  border-radius: var(--border-radius);
+  padding: 32px 24px;
+  flex: 1 1 320px;
+  min-width: 260px;
+  max-width: 350px;
+  box-shadow: var(--shadow);
+}
+
+.service img, .portfolio-item img {
+  width: 60px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+}
+
+.service h3, .portfolio-item h3, .testimonial h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+/* Steps section */
+.steps { 
+  margin-top: 32px; 
+}
+
+.step span { 
+  font-size: 2.2em; 
+  color: var(--secondary); 
+  font-weight: bold; 
+}
+
+/* Testimonials section */
+.testimonials { 
+  margin-top: 32px; 
+}
+
+.testimonial { 
+  text-align: center; 
+}
+
+.testimonial img { 
+  width: 64px; 
+  border-radius: 50%; 
+  margin-bottom: 12px;
+}
+
+.testimonial p { 
+  font-style: italic; 
+}
+
+/* Contact form */
+.contact-form {
+  background: var(--bg-light);
+  border-radius: var(--border-radius);
+  padding: 32px 24px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label { 
+  display: block; 
+  margin-bottom: 8px; 
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #d1e3f7;
+}
+
+.contact-form button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover { 
+  background: var(--secondary); 
+}
+
+/* WhatsApp button */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2000;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.27);
+  font-size: 2.2em;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.whatsapp-sticky:hover { 
+  background: #128C7E; 
+}

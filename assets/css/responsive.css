@@ -1,0 +1,108 @@
+@media (max-width: 900px) {
+  .services, .portfolio, .logos, .steps, .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    min-height: 72px;
+    padding: 8px 8px 0 8px;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+  }
+  .hero-2col {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 48px 10px 32px 10px;
+    gap: 24px;
+  }
+  .hero-2col .hero-content { text-align: center; }
+  .hero-2col .hero-image img { max-width: 260px; margin: 0 auto; transform: none; }
+  .navbar .logo {
+    margin-bottom: 0;
+    text-align: left;
+    height: 56px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-bottom: 0;
+    flex: 1 1 auto;
+  }
+  .nav-desktop { display: none !important; }
+  .navbar nav a.cta-nav {
+    margin: 0;
+    width: auto;
+    max-width: none;
+    text-align: center;
+    font-size: 1em;
+    padding: 6px 16px;
+    align-self: center;
+  }
+  .navbar-flags { display: none !important; }
+  .navbar-flags-mobile {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    margin-right: 0;
+    padding-right: 18px;
+    width: 100%;
+    border-bottom: 1.5px solid #e5e7eb;
+    padding-bottom: 8px;
+    background: #fff;
+  }
+  .navbar-flags-mobile a {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: box-shadow 0.15s, transform 0.15s;
+    box-shadow: none;
+    padding: 0;
+  }
+  .navbar-flags-mobile a:focus, .navbar-flags-mobile a:hover {
+    box-shadow: 0 0 0 2px #2563eb44;
+    transform: scale(1.08);
+  }
+  .navbar-flags-mobile svg {
+    width: 18px;
+    height: 12px;
+    max-width: 18px;
+    max-height: 12px;
+    min-width: 12px;
+    min-height: 8px;
+    display: block;
+  }
+  .section.alt { padding: 24px 8px; }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 4px 2vw 0 2vw;
+    min-height: 64px;
+  }
+  .navbar .logo img { height: 44px; }
+  .navbar-flags-mobile {
+    gap: 7px;
+    margin-top: 7px;
+    margin-right: 0;
+    padding-right: 10px;
+    padding-bottom: 6px;
+  }
+  .navbar-flags-mobile svg {
+    width: 14px;
+    height: 9px;
+    max-width: 14px;
+    max-height: 9px;
+    min-width: 9px;
+    min-height: 6px;
+  }
+}
