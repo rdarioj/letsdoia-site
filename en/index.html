@@ -258,6 +258,7 @@
     </div>
   </section>
 
+<!-- Demo / Video -->
 <section class="section" id="demo">
   <h2 class="section-title">Demo in Action</h2>
   <div style="text-align:center;">
@@ -274,8 +275,7 @@
       Watch how we find specific leads for your business: you only need the industry, location, and position you're targeting.<br>
       <strong>Example: "Dental clinic + Spain + Director" = Contact list ready for your sales strategy.</strong>
     </p>
-    <a href="#contacto" class="cta-btn" style="margin-top:18px;">Request your demo</a>
-  </div>
+    <a href="#contact" class="cta-btn" style="margin-top:18px;">Request your demo</a>  </div>
 </section>
 
   <section class="section" id="portfolio">
@@ -439,5 +439,63 @@
       document.getElementById('contact-success').style.display = 'block';
     });
   </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 1. Click on "Request your demo"
+    var demoBtns = document.querySelectorAll('a[href="#contact"].cta-btn, a[href="#contact"]:not(.cta-btn)');
+    demoBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click_solicita_demo', {
+          'event_category': 'CTA',
+          'event_label': 'Request your demo'
+        });
+      });
+    });
+
+    // 2. Click on WhatsApp Direct
+    var whatsappBtns = document.querySelectorAll('a[href^="https://wa.me/"]');
+    whatsappBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click_whatsapp', {
+          'event_category': 'CTA',
+          'event_label': 'WhatsApp Direct'
+        });
+      });
+    });
+
+    // 3. Click on Calendly
+    var calendlyBtns = document.querySelectorAll('a[href^="https://calendly.com/"]');
+    calendlyBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click_calendly', {
+          'event_category': 'CTA',
+          'event_label': 'Schedule a call'
+        });
+      });
+    });
+
+    // 4. Contact form submission
+    var contactForm = document.querySelector('.contact-form');
+    if(contactForm){
+      contactForm.addEventListener('submit', function() {
+        gtag('event', 'submit_contact_form', {
+          'event_category': 'Form',
+          'event_label': 'Contact form submission'
+        });
+      });
+    }
+
+    // 5. Click on email (mailto)
+    var emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+    emailLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'click_email', {
+          'event_category': 'Contact',
+          'event_label': 'Click on email'
+        });
+      });
+    });
+  });
+</script>
 </body>
 </html>
