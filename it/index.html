@@ -256,6 +256,7 @@
     </div>
   </section>
 
+<!-- Demo / Video -->
 <section class="section" id="demo">
   <h2 class="section-title">Demo in azione</h2>
   <div style="text-align:center;">
@@ -272,7 +273,7 @@
       Guarda come troviamo clienti potenziali specifici per la tua attività: ti servono solo il settore, la posizione e la figura che stai cercando.<br>
       <strong>Esempio: "Clinica dentale + Spagna + Direttore" = Lista di contatti pronti per la tua strategia commerciale.</strong>
     </p>
-    <a href="#contacto" class="cta-btn" style="margin-top:18px;">Richiedi la tua demo</a>
+    <a href="#contatto" class="cta-btn" style="margin-top:18px;">Richiedi la tua demo</a>
   </div>
 </section>
 
@@ -394,7 +395,7 @@
     <a href="https://wa.me/393921473519" class="cta-btn" style="background:#25D366;color:#fff;margin-bottom:10px;display:inline-block;">
       <i class="fab fa-whatsapp"></i> WhatsApp Diretto
     </a>
-      <a href="https://calendly.com/rdarioj" target="_blank" class="cta-btn" style="background:#7c3aed;color:#fff;margin-bottom:10px;display:inline-block;">
+    <a href="https://calendly.com/rdarioj" target="_blank" class="cta-btn" style="background:#7c3aed;color:#fff;margin-bottom:10px;display:inline-block;">
       <i class="fas fa-video"></i> Prenota videochiamata
     </a>
     <p style="margin-top:10px; color:#444;">
@@ -438,3 +439,64 @@
     document.getElementById('contact-success').style.display = 'block';
   });
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 1. Clic su "Richiedi la tua demo"
+    var demoBtns = document.querySelectorAll('a[href="#contatto"].cta-btn, a[href="#contatto"]:not(.cta-btn)');
+    demoBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click_solicita_demo', {
+          'event_category': 'CTA',
+          'event_label': 'Richiedi la tua demo'
+        });
+      });
+    });
+
+    // 2. Clic su WhatsApp Diretto
+    var whatsappBtns = document.querySelectorAll('a[href^="https://wa.me/"]');
+    whatsappBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click_whatsapp', {
+          'event_category': 'CTA',
+          'event_label': 'WhatsApp Diretto'
+        });
+      });
+    });
+
+    // 3. Clic su Calendly
+    var calendlyBtns = document.querySelectorAll('a[href^="https://calendly.com/"]');
+    calendlyBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click_calendly', {
+          'event_category': 'CTA',
+          'event_label': 'Prenota videochiamata'
+        });
+      });
+    });
+
+    // 4. Invio del modulo di contatto
+    var contactForm = document.querySelector('.contact-form');
+    if(contactForm){
+      contactForm.addEventListener('submit', function() {
+        gtag('event', 'submit_contact_form', {
+          'event_category': 'Formulario',
+          'event_label': 'Invio modulo di contatto'
+        });
+      });
+    }
+
+    // 5. Clic su email (mailto)
+    var emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+    emailLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'click_email', {
+          'event_category': 'Contatto',
+          'event_label': 'Clic su email'
+        });
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
