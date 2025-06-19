@@ -149,8 +149,8 @@
 </section>
 
   <!-- Servicios -->
-    <section class="section services" id="servicios"></section>>
-    <h2 class="section-title">Servicios para potenciar tu negocio</h2>
+<section class="section services" id="servicios">
+      <h2 class="section-title">Servicios para potenciar tu negocio</h2>
     <div class="services">
       <div class="service">
         <h3>Consultoría Estratégica eCommerce &amp; Producto</h3>
@@ -264,7 +264,7 @@
     </div>
   </section>
 
-  <!-- Demo / Video -->
+    <!-- Demo / Video -->
 <section class="section" id="demo">
   <h2 class="section-title">Demo en acción</h2>
   <div style="text-align:center;">
@@ -454,5 +454,64 @@
       document.getElementById('contact-success').style.display = 'block';
     });
   </script>
+  <!-- Google Analytics 4: Eventos personalizados para acciones clave -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 1. Clic en "Solicita tu demo"
+    var demoBtns = document.querySelectorAll('a[href="#contacto"].cta-btn, a[href="#contacto"]:not(.cta-btn)');
+    demoBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click_solicita_demo', {
+          'event_category': 'CTA',
+          'event_label': 'Solicita tu demo'
+        });
+      });
+    });
+
+    // 2. Clic en WhatsApp Directo (todos los enlaces a wa.me)
+    var whatsappBtns = document.querySelectorAll('a[href^="https://wa.me/"]');
+    whatsappBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click_whatsapp', {
+          'event_category': 'CTA',
+          'event_label': 'WhatsApp Directo'
+        });
+      });
+    });
+
+    // 3. Clic en Calendly (todos los enlaces a calendly.com)
+    var calendlyBtns = document.querySelectorAll('a[href^="https://calendly.com/"]');
+    calendlyBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'click_calendly', {
+          'event_category': 'CTA',
+          'event_label': 'Agendar videollamada'
+        });
+      });
+    });
+
+    // 4. Envío del formulario de contacto
+    var contactForm = document.querySelector('.contact-form');
+    if(contactForm){
+      contactForm.addEventListener('submit', function() {
+        gtag('event', 'submit_contact_form', {
+          'event_category': 'Formulario',
+          'event_label': 'Envío formulario de contacto'
+        });
+      });
+    }
+
+    // 5. Clic en email (mailto)
+    var emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+    emailLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'click_email', {
+          'event_category': 'Contacto',
+          'event_label': 'Clic en email'
+        });
+      });
+    });
+  });
+</script>
 </body>
 </html>
