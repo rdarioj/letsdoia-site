@@ -298,13 +298,7 @@
   <h2 class="section-title">Demo en acción</h2>
   <div style="text-align:center;">
     <div class="demo-video-responsive">
-      <iframe src="https://www.loom.com/embed/16a813fd3670431ca93b29327b243894" 
-              title="Demo letsdoia.com - Automatización con IA" 
-              allowfullscreen
-              webkitallowfullscreen 
-              mozallowfullscreen
-              frameborder="0">
-      </iframe>
+  <span style="color:#2563eb;font-size:1.2em;">Cargando video...</span>
     </div>
     <p style="margin-top:18px;">
       Mira cómo encontramos clientes potenciales específicos para tu negocio: solo necesitas el rubro, la ubicación y el puesto que buscas.<br>
@@ -544,6 +538,29 @@
       });
     });
   });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var loomContainer = document.getElementById('loom-video-lazy');
+  if ('IntersectionObserver' in window && loomContainer) {
+    let loaded = false;
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !loaded) {
+          loaded = true;
+          loomContainer.innerHTML =
+            '<iframe src="https://www.loom.com/embed/16a813fd3670431ca93b29327b243894" title="Demo letsdoia.com - Automatización con IA" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder="0"></iframe>';
+          obs.disconnect();
+        }
+      });
+    });
+    observer.observe(loomContainer);
+  } else if (loomContainer) {
+    // Fallback para navegadores antiguos
+    loomContainer.innerHTML =
+      '<iframe src="https://www.loom.com/embed/16a813fd3670431ca93b29327b243894" title="Demo letsdoia.com - Automatización con IA" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder="0"></iframe>';
+  }
+});
 </script>
 </body>
 </html>
