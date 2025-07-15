@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,10 +27,13 @@
 
   <!-- Navbar -->
   <div class="navbar">
-    <a href="#" class="logo">
-      <img src="images/logo.png" alt="letsdoia.com" style="height:56px;vertical-align:middle;">
-    </a>
-    <nav>
+  <a href="#" class="logo">
+    <picture>
+      <source srcset="images/logo.webp" type="image/webp">
+      <img src="images/logo.png" alt="letsdoia.com" width="143" height="56" style="height:56px;vertical-align:middle;">
+    </picture>
+  </a>
+  <nav>
       <a href="#servicios" class="nav-link nav-desktop">Servicios</a>
       <a href="#demo" class="nav-link nav-desktop">Demo</a>
       <a href="#portfolio" class="nav-link nav-desktop">Portfolio</a>
@@ -125,9 +129,14 @@
     </a>
   </div>
 
-  <div class="hero-image" style="position:relative;z-index:1;">
-    <img src="images/Chat-bot.gif" alt="Ilustración IA amigable" loading="lazy" style="max-width:380px;width:100%;height:auto;border-radius:18px;box-shadow:0 4px 24px #2563eb22;background:#f3f8fd;padding:12px;">
-  </div>
+<div class="hero-image" style="position:relative;z-index:1;">
+  <video autoplay loop muted playsinline width="380" height="380"
+    style="max-width:380px;width:100%;height:auto;border-radius:18px;box-shadow:0 4px 24px #2563eb22;background:#f3f8fd;padding:12px;"
+    poster="images/Chat-bot.webp" title="Animación de chatbot IA">
+    <source src="images/Chat-bot.mp4" type="video/mp4">
+    <img src="images/Chat-bot.webp" alt="Ilustración IA amigable" loading="lazy" width="380" height="380">
+  </video>
+</div>
 
 </section>
   <!-- Texto post hero -->
