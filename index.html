@@ -2,32 +2,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Analytics 4 -->
-<script>
-function loadGA() {
-  if (window.GA_LOADED) return;
-  window.GA_LOADED = true;
-  var s = document.createElement('script');
-  s.async = true;
-  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-R59CBJ8VJP';
-  document.head.appendChild(s);
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  window.gtag = gtag;
-  gtag('js', new Date());
-  gtag('config', 'G-R59CBJ8VJP');
-}
-window.addEventListener('scroll', loadGA, {once:true});
-window.addEventListener('pointerdown', loadGA, {once:true});
-window.addEventListener('keydown', loadGA, {once:true});
-</script>
-  <!-- End Google Analytics 4 -->
+  <!-- Google Analytics 4 (carga diferida para performance) -->
+  <script>
+    function loadGA() {
+      if (window.GA_LOADED) return;
+      window.GA_LOADED = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-R59CBJ8VJP';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-R59CBJ8VJP');
+    }
+    window.addEventListener('scroll', loadGA, {once:true});
+    window.addEventListener('pointerdown', loadGA, {once:true});
+    window.addEventListener('keydown', loadGA, {once:true});
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Agencia global de Inteligencia Artificial: bots, automatización, consultoría, eCommerce y soluciones IA para empresas. Impulsa tu negocio con letsdoia.com.">
   <title>letsdoia.com - Agencia Global de Inteligencia Artificial</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-  <!-- ======= PRECONNECTS OPTIMIZADOS ======= -->
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:title" content="letsdoia.com - Agencia Global de Inteligencia Artificial">
+  <meta property="og:description" content="Agencia global de Inteligencia Artificial: bots, automatización, consultoría, eCommerce y soluciones IA para empresas. Impulsa tu negocio con letsdoia.com.">
+  <meta property="og:image" content="https://letsdoia.com/images/social-preview.png">
+  <meta property="og:url" content="https://letsdoia.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="letsdoia.com - Agencia Global de Inteligencia Artificial">
+  <meta name="twitter:description" content="Agencia global de Inteligencia Artificial: bots, automatización, consultoría, eCommerce y soluciones IA para empresas. Impulsa tu negocio con letsdoia.com.">
+  <meta name="twitter:image" content="https://letsdoia.com/images/social-preview.png">
+
+  <!-- Preconnects para recursos externos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -59,14 +73,14 @@ window.addEventListener('keydown', loadGA, {once:true});
   <!-- Navbar -->
   <div class="navbar">
 <a href="#" class="logo">
-  <picture>
-    <source srcset="images/logo-286.webp 2x, images/logo.webp 1x" type="image/webp">
-    <img src="images/logo.webp"
-         srcset="images/logo-286.webp 2x, images/logo.webp 1x"
-         alt="letsdoia.com"
-         width="143" height="56"
-         style="height:56px;vertical-align:middle;">
-  </picture>
+<picture>
+  <source srcset="images/logo-286.webp 2x, images/logo.webp 1x" type="image/webp">
+  <img src="images/logo.webp"
+       srcset="images/logo-286.webp 2x, images/logo.webp 1x"
+       alt="letsdoia.com"
+       width="143" height="56"
+       style="height:56px;vertical-align:middle;">
+</picture>
 </a>
   <nav>
       <a href="#servicios" class="nav-link nav-desktop">Servicios</a>
@@ -274,39 +288,39 @@ window.addEventListener('keydown', loadGA, {once:true});
     </ul>
   </section>
   <!-- Certificaciones y habilidades -->
-  <section class="section certifications" style="max-width:900px;margin:48px auto 0 auto;padding:32px 24px;background:#eaf3fb;border-radius:18px;box-shadow:0 4px 24px #2563eb11;">
-    <h2 class="section-title" style="color:#2563eb;">Certificaciones y habilidades</h2>
-    <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:center;">
-      <div style="text-align:center;">
-        <img src="images/salesforce.svg" alt="Salesforce" style="height:48px;margin-bottom:8px;">
-        <div style="font-weight:600;color:#2563eb;">Salesforce Ranger</div>
-        <div style="font-size:0.95em;color:#444;">Marketing Cloud, Data Cloud, Personalization</div>
-      </div>
-      <div style="text-align:center;">
-        <img src="images/vtex.svg" alt="VTEX" style="height:48px;margin-bottom:8px;">
-        <div style="font-weight:600;color:#2563eb;">VTEX Solution Architect</div>
-        <div style="font-size:0.95em;color:#444;">Integraciones, Marketplaces</div>
-      </div>
-      <div style="text-align:center;">
-        <img src="images/google-analytics.svg" alt="Google Analytics" style="height:48px;margin-bottom:8px;">
-        <div style="font-weight:600;color:#2563eb;">Google Analytics Qualified</div>
-        <div style="font-size:0.95em;color:#444;">Power User, Shopping Ads, Tag Manager</div>
-      </div>
-      <div style="text-align:center;">
-        <img src="images/scrum.svg" alt="Scrum" style="height:48px;margin-bottom:8px;">
-        <div style="font-weight:600;color:#2563eb;">Scrum Certified</div>
-        <div style="font-size:0.95em;color:#444;">Agile, Kanban, SAFe</div>
-      </div>
-      <div style="text-align:center;">
-        <img src="images/mercadolibre.svg" alt="Mercado Libre" style="height:48px;margin-bottom:8px;">
-        <div style="font-weight:600;color:#2563eb;">Mercado Libre Developer</div>
-        <div style="font-size:0.95em;color:#444;">Integraciones, APIs</div>
-      </div>
+<section class="section certifications" style="max-width:900px;margin:48px auto 0 auto;padding:32px 24px;background:#eaf3fb;border-radius:18px;box-shadow:0 4px 24px #2563eb11;">
+  <h2 class="section-title" style="color:#2563eb;">Certificaciones y habilidades</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:center;">
+    <div style="text-align:center;">
+      <img src="images/salesforce.svg" alt="Salesforce" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
+      <div style="font-weight:600;color:#2563eb;">Salesforce Ranger</div>
+      <div style="font-size:0.95em;color:#444;">Marketing Cloud, Data Cloud, Personalization</div>
     </div>
-    <div style="text-align:center;margin-top:24px;">
-      <span style="color:#2563eb;font-weight:600;">+ Otras certificaciones en comercio electrónico, marketing digital y analítica</span>
+    <div style="text-align:center;">
+      <img src="images/vtex.svg" alt="VTEX" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
+      <div style="font-weight:600;color:#2563eb;">VTEX Solution Architect</div>
+      <div style="font-size:0.95em;color:#444;">Integraciones, Marketplaces</div>
     </div>
-  </section>
+    <div style="text-align:center;">
+      <img src="images/google-analytics.svg" alt="Google Analytics" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
+      <div style="font-weight:600;color:#2563eb;">Google Analytics Qualified</div>
+      <div style="font-size:0.95em;color:#444;">Power User, Shopping Ads, Tag Manager</div>
+    </div>
+    <div style="text-align:center;">
+      <img src="images/scrum.svg" alt="Scrum" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
+      <div style="font-weight:600;color:#2563eb;">Scrum Certified</div>
+      <div style="font-size:0.95em;color:#444;">Agile, Kanban, SAFe</div>
+    </div>
+    <div style="text-align:center;">
+      <img src="images/mercadolibre.svg" alt="Mercado Libre" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
+      <div style="font-weight:600;color:#2563eb;">Mercado Libre Developer</div>
+      <div style="font-size:0.95em;color:#444;">Integraciones, APIs</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:24px;">
+    <span style="color:#2563eb;font-weight:600;">+ Otras certificaciones en comercio electrónico, marketing digital y analítica</span>
+  </div>
+</section>
 
     <!-- Demo / Video -->
 <section class="section" id="demo">
@@ -329,21 +343,21 @@ window.addEventListener('keydown', loadGA, {once:true});
   <h2 class="section-title">¿Qué puedo hacer por tu negocio?</h2>
   <div class="portfolio">
     <div class="portfolio-item">
-      <img src="images/dashboard.svg" alt="Panel de clientes potenciales" class="portfolio-img-large">
+      <img src="images/dashboard.svg" alt="Panel de clientes potenciales" class="portfolio-img-large" width="120" height="120" style="width:120px;height:120px;">
       <h3>Mini-panel de clientes potenciales en tiempo real</h3>
       <p>
         Visualiza y gestiona todos tus contactos y consultas desde un panel simple y accesible, para no perder ninguna oportunidad.
       </p>
     </div>
     <div class="portfolio-item">
-      <img src="images/whatsapp-bot.svg" alt="Chatbot WhatsApp IA" class="portfolio-img-large">
+      <img src="images/whatsapp-bot.svg" alt="Chatbot WhatsApp IA" class="portfolio-img-large" width="120" height="120" style="width:120px;height:120px;">
       <h3>Chatbot inteligente en WhatsApp</h3>
       <p>
         Integro un asistente conversacional con IA en tu WhatsApp para responder consultas, calificar clientes potenciales y automatizar la atención. <b>¡Pruébalo ahora desde el botón de WhatsApp en esta página!</b>
       </p>
     </div>
     <div class="portfolio-item">
-      <img src="images/propuesta-ia.svg" alt="Propuestas con IA" class="portfolio-img-large">
+      <img src="images/propuesta-ia.svg" alt="Propuestas con IA" class="portfolio-img-large" width="120" height="120" style="width:120px;height:120px;">
       <h3>Propuestas automáticas con IA</h3>
       <p>
         La IA genera propuestas o presupuestos personalizados para tus clientes en minutos, mejorando la conversión y ahorrando tiempo.
@@ -352,7 +366,7 @@ window.addEventListener('keydown', loadGA, {once:true});
     <!-- Segunda fila, item centrado -->
     <div style="width:100%;display:flex;justify-content:center;">
       <div class="portfolio-item" style="flex: 1 1 100%; max-width: 600px; margin-top: 32px;">
-        <img src="images/automation.svg" alt="Automatización de clientes potenciales" class="portfolio-img-large">
+        <img src="images/automation.svg" alt="Automatización de clientes potenciales" class="portfolio-img-large" width="120" height="120" style="width:120px;height:120px;">
         <h3>Automatización de respuestas y generación de clientes potenciales</h3>
         <p>
           Automatizo la recepción de consultas y el envío de respuestas personalizadas, guardando los clientes potenciales en tu CRM, Google Sheets o Notion, y notificándote en tiempo real.
