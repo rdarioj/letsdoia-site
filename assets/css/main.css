@@ -863,3 +863,8 @@ a { text-decoration: none; }
   src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-brands-400.woff2') format('woff2'),
        url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-brands-400.woff') format('woff');
 }
+h1 {
+  font-size: 2.25rem; /* o el tamaño que prefieras */
+  font-weight: 700;
+  line-height: 1.2;
+}
