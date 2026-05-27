@@ -156,6 +156,13 @@
 .v2-note { font-size: 0.9em; color: #64748b; margin-top: 20px; text-align: center; }
 .navbar nav a.nav-link--product { color: #7c3aed; font-weight: 600; }
 
+/* Banderas mobile: main.css las oculta en .navbar-flags; requiere .navbar-flags-mobile */
+@media (min-width: 601px) {
+  .navbar-flags-mobile {
+    display: none !important;
+  }
+}
+
 /* ——— Layout base: sin scroll horizontal ——— */
 html {
   overflow-x: hidden;
