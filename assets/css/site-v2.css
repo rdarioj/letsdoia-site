@@ -10,6 +10,26 @@
   line-height: 1.5;
 }
 .v2-trust-bar strong { color: #2563eb; }
+.v2-hero-lead {
+  font-size: 1.12em;
+  line-height: 1.7;
+  color: #333;
+  margin: 0 0 14px;
+}
+.v2-hero-founder {
+  font-size: 0.98em;
+  line-height: 1.65;
+  color: #555;
+  margin: 0;
+}
+.v2-section-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: -8px auto 0;
+  color: #555;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
 .v2-hero-actions {
   display: flex;
   flex-wrap: wrap;
