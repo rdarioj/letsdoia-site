@@ -1,0 +1,39 @@
+/* Version toggle: new site ↔ archived site */
+.ld-site-switch {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: #181a1b;
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s, background 0.15s;
+}
+.ld-site-switch:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+.ld-site-switch--old {
+  background: #64748b;
+}
+.ld-site-switch--old:hover {
+  background: #475569;
+}
+@media (max-width: 600px) {
+  .ld-site-switch {
+    bottom: 72px;
+    left: 12px;
+    font-size: 0.78rem;
+    padding: 8px 12px;
+  }
+}

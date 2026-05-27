@@ -1,595 +1,228 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Analytics 4 (carga diferida para performance) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R59CBJ8VJP"></script>
   <script>
-    function loadGA() {
-      if (window.GA_LOADED) return;
-      window.GA_LOADED = true;
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-R59CBJ8VJP';
-      document.head.appendChild(s);
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      window.gtag = gtag;
-      gtag('js', new Date());
-      gtag('config', 'G-R59CBJ8VJP');
-    }
-    window.addEventListener('scroll', loadGA, {once:true});
-    window.addEventListener('pointerdown', loadGA, {once:true});
-    window.addEventListener('keydown', loadGA, {once:true});
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R59CBJ8VJP');
   </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Agencia global de Inteligencia Artificial: bots, automatización, consultoría, eCommerce y soluciones IA para empresas. Impulsa tu negocio con letsdoia.com.">
-  <title>letsdoia.com - Agencia Global de Inteligencia Artificial</title>
+  <meta name="description" content="Consultoría y desarrollo e-commerce. Integraciones, migraciones y Tienda Ágil en Shopify. Rubén Darío Jiménez — Letsdoia.">
+  <title>Letsdoia — E-commerce, desarrollo Shopify e integraciones</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
-  <!-- Open Graph / Facebook / WhatsApp -->
-  <meta property="og:title" content="letsdoia.com - Agencia Global de Inteligencia Artificial">
-  <meta property="og:description" content="Agencia global de Inteligencia Artificial: bots, automatización, consultoría, eCommerce y soluciones IA para empresas. Impulsa tu negocio con letsdoia.com.">
-  <meta property="og:image" content="https://letsdoia.com/images/social-preview.png">
+  <meta property="og:title" content="Letsdoia — E-commerce y Shopify">
+  <meta property="og:description" content="Tiendas que convierten. Integraciones que escalan. Consultoría e implementación Shopify.">
   <meta property="og:url" content="https://letsdoia.com/">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="letsdoia.com - Agencia Global de Inteligencia Artificial">
-  <meta name="twitter:description" content="Agencia global de Inteligencia Artificial: bots, automatización, consultoría, eCommerce y soluciones IA para empresas. Impulsa tu negocio con letsdoia.com.">
-  <meta name="twitter:image" content="https://letsdoia.com/images/social-preview.png">
-
-  <!-- Preconnects para recursos externos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <link rel="preconnect" href="https://www.loom.com">
-
-  <!-- Main CSS async -->
-  <link rel="preload" href="assets/css/main.css" as="style">
-  <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="assets/css/main.css">
-  </noscript>
-
-  <!-- FontAwesome async -->
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  </noscript>
-
-  <!-- Google Fonts async -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" as="style">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap">
-  </noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/site-v2.css">
+  <link rel="stylesheet" href="assets/css/site-switcher.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
-  <!-- Navbar -->
   <div class="navbar">
-<a href="#" class="logo">
-<picture>
-  <source srcset="images/logo-286.webp 2x, images/logo.webp 1x" type="image/webp">
-  <img src="images/logo.webp"
-       srcset="images/logo-286.webp 2x, images/logo.webp 1x"
-       alt="letsdoia.com"
-       width="143" height="56"
-       style="height:56px;vertical-align:middle;">
-</picture>
-</a>
-  <nav>
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="Letsdoia" style="height:56px;vertical-align:middle;">
+    </a>
+    <nav>
       <a href="#servicios" class="nav-link nav-desktop">Servicios</a>
-      <a href="#demo" class="nav-link nav-desktop">Demo</a>
-      <a href="#portfolio" class="nav-link nav-desktop">Portfolio</a>
-      <a href="#proceso" class="nav-link nav-desktop">¿Cómo trabajamos?</a>
-      <a href="#contacto" class="cta-nav">Contáctanos</a>
-
-    <div class="navbar-flags">
-  <!-- Español -->
-  <a href="index.html" title="Español" aria-label="Español">
-    <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;">
-      <rect width="24" height="16" fill="#AA151B"/>
-      <rect y="4" width="24" height="8" fill="#F1BF00"/>
-    </svg>
-  </a>
-  <!-- Inglés (USA) -->
-  <a href="en/index.html" title="English" aria-label="English">
-    <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;">
-      <rect width="24" height="16" fill="#B22234"/>
-      <g>
-        <rect width="24" height="2.2857" y="2.2857" fill="#FFF"/>
-        <rect width="24" height="2.2857" y="6.8571" fill="#FFF"/>
-        <rect width="24" height="2.2857" y="11.4286" fill="#FFF"/>
-      </g>
-      <rect width="9.6" height="8" fill="#3C3B6E"/>
-      <!-- Puedes omitir los <circle> para simplificar y evitar errores -->
-    </svg>
-  </a>
-  <!-- Italiano -->
-  <a href="it/index.html" title="Italiano" aria-label="Italiano">
-    <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;">
-      <rect width="8" height="16" fill="#008C45"/>
-      <rect x="8" width="8" height="16" fill="#FFF"/>
-      <rect x="16" width="8" height="16" fill="#CD212A"/>
-    </svg>
-  </a>
-    </div>
+      <a href="/tienda-agil/" class="nav-link nav-desktop nav-link--product">Tienda Ágil</a>
+      <a href="#casos" class="nav-link nav-desktop">Casos</a>
+      <a href="#sobre-mi" class="nav-link nav-desktop">Sobre mí</a>
+      <a href="#contacto" class="cta-nav">Agendar llamada</a>
+      <div class="navbar-flags">
+        <a href="/" title="Español" aria-label="Español" style="outline:2px solid #2563eb44;">
+          <svg width="20" height="14" viewBox="0 0 24 16"><rect width="24" height="16" fill="#AA151B"/><rect y="4" width="24" height="8" fill="#F1BF00"/></svg>
+        </a>
+        <a href="/en/" title="English" aria-label="English">
+          <svg width="20" height="14" viewBox="0 0 24 16"><rect width="24" height="16" fill="#B22234"/></svg>
+        </a>
+      </div>
     </nav>
   </div>
 
-  <!-- Banderas debajo del botón Contáctanos en mobile, alineadas a la derecha -->
-<div class="navbar-flags-mobile">
-  <a href="index.html" title="Español" aria-label="Español" style="outline:2px solid #2563eb44;">
-    <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;">
-      <rect width="24" height="16" fill="#AA151B"/>
-      <rect y="4" width="24" height="8" fill="#F1BF00"/>
-    </svg>
-  </a>
-  <a href="en/index.html" title="English" aria-label="English">
-    <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;">
-      <rect width="24" height="16" fill="#B22234"/>
-      <g>
-        <rect width="24" height="2.2857" y="2.2857" fill="#FFF"/>
-        <rect width="24" height="2.2857" y="6.8571" fill="#FFF"/>
-        <rect width="24" height="2.2857" y="11.4286" fill="#FFF"/>
-      </g>
-      <rect width="9.6" height="8" fill="#3C3B6E"/>
-    </svg>
-  </a>
-  <a href="it/index.html" title="Italiano" aria-label="Italiano">
-    <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;">
-      <rect width="8" height="16" fill="#008C45"/>
-      <rect x="8" width="8" height="16" fill="#FFF"/>
-      <rect x="16" width="8" height="16" fill="#CD212A"/>
-    </svg>
-  </a>
-</div>
-
-  <!-- Hero -->
-<section class="hero hero-white hero-2col" style="position:relative;overflow:hidden;">
-
-  <!-- Fondo SVG orgánico decorativo -->
-  <div class="hero-bg-svg" aria-hidden="true">
-    <svg width="100%" height="100%" viewBox="0 0 1440 400" fill="none"
-         xmlns="http://www.w3.org/2000/svg"
-         preserveAspectRatio="xMinYMin slice"
-         style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;">
-      <path d="M0,160 C320,320 1120,0 1440,160 L1440,400 L0,400 Z" fill="#eaf3fb"/>
-      <path d="M0,240 C400,360 1040,80 1440,240 L1440,400 L0,400 Z" fill="#f3f8fd" opacity="0.7"/>
-    </svg>
-  </div>
-
-  <div class="hero-content" style="position:relative;z-index:1;">
- <span class="hero-label">Soluciones IA para empresas</span>
-    <h1>Impulsa tu negocio con Inteligencia Artificial</h1>
-    <p>
-      Automatiza procesos, genera más ventas y brinda un servicio al cliente excepcional.<br>
-      Implementamos bots, automatizaciones y videos personalizados para que tu empresa consiga más leads y crezca más rápido.
-      <span class="hero-highlight">Descubre cómo la IA puede transformar tu negocio hoy.</span>
-    </p>
-    <a href="#contacto" class="cta-btn" style="margin-top:22px;">
-      <i class="fas fa-robot" style="margin-right:10px;"></i>
-      Solicita tu demo gratuita
-    </a>
-  </div>
-
-<div class="hero-image" style="position:relative;z-index:1;">
-  <video autoplay loop muted playsinline width="380" height="380"
-    style="max-width:380px;width:100%;height:auto;border-radius:18px;box-shadow:0 4px 24px #2563eb22;background:#f3f8fd;padding:12px;"
-    poster="images/Chat-bot.webp" title="Animación de chatbot IA">
-    <source src="images/Chat-bot.mp4" type="video/mp4">
-    <img src="images/Chat-bot.webp" alt="Ilustración IA amigable" loading="lazy" width="380" height="380">
-  </video>
-</div>
-
-</section>
-  <!-- Texto post hero -->
-
-  <section class="hero hero-white hero-2col" style="position:relative;overflow:hidden;">
-      <h2 class="visually-hidden">Sobre nuestro equipo</h2>
-    <p class="about-human">
-      Somos un equipo real, apasionado por la tecnología y el crecimiento de las empresas. Nos involucramos en cada proyecto como si fuera propio, escuchando tus necesidades y acompañándote en cada paso.<br>
-      <b>La Inteligencia Artificial no reemplaza a las personas, las potencia.</b>
-    </p>
-  </section>
-  <!-- Logos de clientes -->
-<section class="section logos logos-aspiracional">
-  <h2 class="visually-hidden">Empresas que confían en letsdoia.com</h2>
-  <p style="font-size:1.2em; color:#2563eb; margin:40px 0;">
-    Pronto verás aquí a empresas que ya confían en letsdoia.com.<br>
-    ¡Tu empresa puede ser la próxima!
-  </p>
-</section>
-
-  <!-- Servicios -->
-<section class="section services" id="servicios">
-      <h2 class="section-title">Servicios para potenciar tu negocio</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Consultoría Estratégica eCommerce &amp; Producto</h3>
-        <p>
-          Más de 10 años liderando proyectos digitales. Auditoría, optimización y acompañamiento en tiendas en línea, marketplaces y plataformas SaaS. Roadmap, selección de tecnología y gestión de lanzamientos.
-        </p>
-      </div>
-      <div class="service">
-        <h3>IA y Automatización para Negocios</h3>
-        <p>
-          Implementación de chatbots, automatización de ventas y soporte, integración de IA con CRM, ERP y sistemas existentes. Personalización de la experiencia del cliente y generación automática de reportes.
-        </p>
-      </div>
-      <div class="service">
-        <h3>Gestión y Seguimiento de Proyectos</h3>
-        <p>
-          Liderazgo de equipos multidisciplinarios, metodologías ágiles (Scrum, Kanban, SAFe), gestión de partes interesadas y reportes ejecutivos para asegurar entregas a tiempo y resultados de negocio.
-        </p>
-      </div>
-      <div class="service">
-        <h3>Capacitación y Talleres</h3>
-        <p>
-          Entrenamiento en IA, automatización, eCommerce, gestión de producto y metodologías ágiles. Talleres prácticos y formación a medida para equipos de alto rendimiento.
-        </p>
-      </div>
-      <div class="service">
-        <h3>Servicios Express</h3>
-        <p>
-          Configuración de chatbots, auditorías rápidas y automatizaciones listas en 48 horas. Soluciones rápidas y de alto impacto para que empieces a ver resultados en días, no meses.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sobre mí -->
-  <section class="section about-me" style="max-width:700px;margin:48px auto 0 auto;padding:32px 24px;background:#f3f8fd;border-radius:18px;box-shadow:0 4px 24px #2563eb11;">
-    <h2 class="section-title" style="color:#2563eb;">Sobre mí</h2>
-    <p style="font-size:1.18em;line-height:1.7;color:#2563eb;">
-      Soy <b>Rubén Darío Jiménez</b>, Product Owner y Product Manager con más de 10 años de experiencia liderando proyectos de software, comercio electrónico y soluciones digitales en empresas de Argentina, Uruguay e Italia.<br><br>
-      Especialista en <b>eCommerce, automatización, integración de APIs y plataformas líderes</b> como Salesforce, VTEX, Adobe y SAP S/4HANA Cloud. Domino metodologías ágiles (Scrum, Kanban, SAFe) y gestión de equipos multidisciplinarios.<br><br>
-      Mi diferencial es unir la visión estratégica, la ejecución técnica y el acompañamiento personalizado: desde la auditoría y optimización de tiendas en línea, hasta la implementación de IA, bots y automatizaciones que generan resultados reales.<br><br>
-      <b>¿Buscas transformar tu negocio digital? Estoy listo para acompañarte en cada paso, con enfoque en resultados y experiencia comprobada.</b>
-    </p>
-    <div style="margin-top:24px;">
-      <a href="https://www.linkedin.com/in/rdarioj/" target="_blank" class="cta-btn">Ver mi perfil en LinkedIn</a>
-    </div>
-  </section>
-
-  <!-- Por qué elegirme -->
-  <section class="section why-me" style="max-width:800px;margin:48px auto 0 auto;padding:32px 24px;background:#fff7ed;border-radius:18px;box-shadow:0 4px 24px #2563eb11;">
-    <h2 class="section-title" style="color:#2563eb;">¿Por qué elegirme?</h2>
-    <ul style="font-size:1.18em;line-height:1.7;color:#2563eb;list-style:none;padding:0;">
-      <li style="margin-bottom:18px;">
-        <i class="fas fa-user-tie" style="color:#7c3aed;margin-right:10px;"></i>
-        <b>Más de 10 años de experiencia real</b> liderando proyectos de eCommerce, producto digital y automatización en empresas líderes de Argentina, Uruguay e Italia.
-      </li>
-      <li style="margin-bottom:18px;">
-        <i class="fas fa-robot" style="color:#7c3aed;margin-right:10px;"></i>
-        <b>Especialista en IA y automatización</b>: implemento soluciones que generan resultados medibles y escalables.
-      </li>
-      <li style="margin-bottom:18px;">
-        <i class="fas fa-users-cog" style="color:#7c3aed;margin-right:10px;"></i>
-        <b>Gestión de equipos y partes interesadas</b>: experiencia en metodologías ágiles, liderazgo y comunicación efectiva.
-      </li>
-      <li style="margin-bottom:18px;">
-        <i class="fas fa-award" style="color:#7c3aed;margin-right:10px;"></i>
-        <b>Certificaciones internacionales</b> en Salesforce, VTEX, Google Analytics, Mercado Libre, Scrum y más.
-      </li>
-      <li style="margin-bottom:18px;">
-        <i class="fas fa-globe" style="color:#7c3aed;margin-right:10px;"></i>
-        <b>Visión global y multicultural</b>: proyectos en Latinoamérica y Europa, inglés profesional, italiano básico.
-      </li>
-      <li>
-        <i class="fas fa-handshake" style="color:#7c3aed;margin-right:10px;"></i>
-        <b>Acompañamiento personalizado</b>: me involucro en cada proyecto como si fuera propio, con enfoque en resultados y relaciones a largo plazo.
-      </li>
-    </ul>
-  </section>
-  <!-- Certificaciones y habilidades -->
-<section class="section certifications" style="max-width:900px;margin:48px auto 0 auto;padding:32px 24px;background:#eaf3fb;border-radius:18px;box-shadow:0 4px 24px #2563eb11;">
-  <h2 class="section-title" style="color:#2563eb;">Certificaciones y habilidades</h2>
-  <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:center;">
-    <div style="text-align:center;">
-      <img src="images/salesforce.svg" alt="Salesforce" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
-      <div style="font-weight:600;color:#2563eb;">Salesforce Ranger</div>
-      <div style="font-size:0.95em;color:#444;">Marketing Cloud, Data Cloud, Personalization</div>
-    </div>
-    <div style="text-align:center;">
-      <img src="images/vtex.svg" alt="VTEX" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
-      <div style="font-weight:600;color:#2563eb;">VTEX Solution Architect</div>
-      <div style="font-size:0.95em;color:#444;">Integraciones, Marketplaces</div>
-    </div>
-    <div style="text-align:center;">
-      <img src="images/google-analytics.svg" alt="Google Analytics" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
-      <div style="font-weight:600;color:#2563eb;">Google Analytics Qualified</div>
-      <div style="font-size:0.95em;color:#444;">Power User, Shopping Ads, Tag Manager</div>
-    </div>
-    <div style="text-align:center;">
-      <img src="images/scrum.svg" alt="Scrum" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
-      <div style="font-weight:600;color:#2563eb;">Scrum Certified</div>
-      <div style="font-size:0.95em;color:#444;">Agile, Kanban, SAFe</div>
-    </div>
-    <div style="text-align:center;">
-      <img src="images/mercadolibre.svg" alt="Mercado Libre" width="48" height="48" style="height:48px;width:48px;margin-bottom:8px;">
-      <div style="font-weight:600;color:#2563eb;">Mercado Libre Developer</div>
-      <div style="font-size:0.95em;color:#444;">Integraciones, APIs</div>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:24px;">
-    <span style="color:#2563eb;font-weight:600;">+ Otras certificaciones en comercio electrónico, marketing digital y analítica</span>
-  </div>
-</section>
-
-    <!-- Demo / Video -->
-<section class="section" id="demo">
-  <h2 class="section-title">Demo en acción</h2>
-  <div style="text-align:center;">
-    <div id="loom-video-lazy" class="demo-video-responsive">
-  <span style="color:#2563eb;font-size:1.2em;">Cargando video...</span>
-    </div>
-    <p style="margin-top:18px;">
-      Mira cómo encontramos clientes potenciales específicos para tu negocio: solo necesitas el rubro, la ubicación y el puesto que buscas.<br>
-      <strong>Ejemplo: "Clínica dental + España + Director" = Lista de contactos listos para tu estrategia comercial.</strong>
-    </p>
-    <a href="#contacto" class="cta-btn" style="margin-top:18px;">Solicita tu demo</a>
-  </div>
-</section>
-
-  <!-- Portfolio / Casos de éxito -->
-  <!-- ¿Qué puedo hacer por tu negocio? -->
-<section class="section" id="portfolio">
-  <h2 class="section-title">¿Qué puedo hacer por tu negocio?</h2>
-  <div class="portfolio">
-    <div class="portfolio-item">
-      <img src="images/dashboard.svg" alt="Panel de clientes potenciales" class="portfolio-img-large" width="120" height="120" style="width:120px;height:120px;">
-      <h3>Mini-panel de clientes potenciales en tiempo real</h3>
+  <section class="hero hero-2col hero-white">
+    <div class="hero-content">
+      <span class="hero-label">Consultoría e-commerce y desarrollo Shopify</span>
+      <h1>Tiendas que venden más. Integraciones que no se rompen.</h1>
       <p>
-        Visualiza y gestiona todos tus contactos y consultas desde un panel simple y accesible, para no perder ninguna oportunidad.
+        Soy <strong>Rubén Darío Jiménez</strong>. Más de 10 años liderando e-commerce e integraciones en retail y marketplaces (VTEX, Shopify, SAP, Salesforce).
+        Te ayudo a lanzar, migrar u optimizar tu canal digital — con desarrollo a medida o con <strong>Tienda Ágil</strong>, nuestra base lista para convertir desde el día uno.
       </p>
-    </div>
-    <div class="portfolio-item">
-      <img src="images/whatsapp-bot.svg" alt="Chatbot WhatsApp IA" class="portfolio-img-large" width="120" height="120" style="width:120px;height:120px;">
-      <h3>Chatbot inteligente en WhatsApp</h3>
-      <p>
-        Integro un asistente conversacional con IA en tu WhatsApp para responder consultas, calificar clientes potenciales y automatizar la atención. <b>¡Pruébalo ahora desde el botón de WhatsApp en esta página!</b>
-      </p>
-    </div>
-    <div class="portfolio-item">
-      <img src="images/propuesta-ia.svg" alt="Propuestas con IA" class="portfolio-img-large" width="120" height="120" style="width:120px;height:120px;">
-      <h3>Propuestas automáticas con IA</h3>
-      <p>
-        La IA genera propuestas o presupuestos personalizados para tus clientes en minutos, mejorando la conversión y ahorrando tiempo.
-      </p>
-    </div>
-    <!-- Segunda fila, item centrado -->
-    <div style="width:100%;display:flex;justify-content:center;">
-      <div class="portfolio-item" style="flex: 1 1 100%; max-width: 600px; margin-top: 32px;">
-        <img src="images/automation.svg" alt="Automatización de clientes potenciales" class="portfolio-img-large" width="120" height="120" style="width:120px;height:120px;">
-        <h3>Automatización de respuestas y generación de clientes potenciales</h3>
-        <p>
-          Automatizo la recepción de consultas y el envío de respuestas personalizadas, guardando los clientes potenciales en tu CRM, Google Sheets o Notion, y notificándote en tiempo real.
-        </p>
+      <div class="v2-hero-actions">
+        <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="cta-btn">
+          <i class="fas fa-video"></i> Agendar diagnóstico (30 min)
+        </a>
+        <a href="/tienda-agil/" class="cta-btn cta-btn--secondary">Ver Tienda Ágil</a>
       </div>
     </div>
-  </div>
-  <div style="text-align:center; margin-top:32px;">
-    <a href="#contacto" class="cta-btn">Quiero implementar esto en mi negocio</a>
-  </div>
-</section>
+    <div class="hero-image">
+      <img src="images/Consulting-rafiki.svg" alt="Consultoría e-commerce" loading="lazy">
+    </div>
+  </section>
 
-  <!-- Proceso de trabajo -->
+  <div class="v2-trust-bar">
+    <strong>Ex Solution Architect VTEX</strong> · Liderazgo e-commerce en retail regional ·
+    Marketplace + ERP · Shopify 2.0 de alto rendimiento
+  </div>
+
+  <section class="section" id="servicios">
+    <h2 class="section-title">Servicios</h2>
+    <div class="v2-grid-3">
+      <article class="v2-card">
+        <h3><i class="fas fa-code"></i> Desarrollo e integraciones</h3>
+        <p>Conectamos tu stack comercial con código que aguanta producción: APIs, pagos, ERP, CRM, marketplaces y automatizaciones (n8n, webhooks).</p>
+        <ul>
+          <li>Integraciones Shopify / VTEX / Adobe Commerce</li>
+          <li>Automatización de pedidos y reporting</li>
+          <li>Middleware para operaciones que el SaaS no cubre</li>
+        </ul>
+      </article>
+      <article class="v2-card">
+        <h3><i class="fas fa-chart-line"></i> Consultoría e-commerce</h3>
+        <p>Estrategia, auditoría y delivery sin contratar un equipo entero. Proyecto puntual o retainer mensual.</p>
+        <ul>
+          <li>Auditoría UX, checkout y catálogo</li>
+          <li>Migraciones y go-live con checklist</li>
+          <li>Dirección de producto fraccional (4–8 h/semana)</li>
+        </ul>
+      </article>
+      <article class="v2-card v2-card--highlight">
+        <h3><i class="fas fa-store"></i> Tienda Ágil en Shopify</h3>
+        <p>Theme 2.0 con módulos de conversión probados en retail real: personalización, recién vistos, recomendaciones y carrito optimizado.</p>
+        <p style="margin-top:16px;"><a href="/tienda-agil/" class="cta-btn" style="padding:12px 24px;font-size:1em;">Ver paquetes y precios</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="casos">
+    <h2 class="section-title">Resultados en contextos reales</h2>
+    <div class="v2-cases">
+      <div class="v2-case">
+        <h4>Marketplace + ERP</h4>
+        <p>Migración y liquidaciones automáticas entre marketplace, pagos y SAP para operación multi-vendedor.</p>
+      </div>
+      <div class="v2-case">
+        <h4>Retail VTEX IO</h4>
+        <p>Checkout y geolocalización para cadena regional; soporte en pico Cyber Monday.</p>
+      </div>
+      <div class="v2-case">
+        <h4>Shopify conversión</h4>
+        <p>Capa de personalización, recomendaciones y carrito para retailer deportivo en USA.</p>
+      </div>
+    </div>
+    <p class="v2-note">Referencias y marcas disponibles bajo NDA en llamada de diagnóstico.</p>
+  </section>
+
   <section class="section" id="proceso">
-    <h2 class="section-title">¿Cómo trabajamos?</h2>
-    <div class="steps" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px;">
-      <div class="step" style="flex: 1 1 200px; max-width: 240px; text-align: center;">
-        <div class="step-icon" style="font-size:2.5em; color:#2563eb; margin-bottom:12px;">
-          <i class="fas fa-comments"></i>
-        </div>
-        <h3>Te escuchamos de verdad</h3>
-        <p>Nos tomamos el tiempo para entender tu empresa, tus desafíos y tus objetivos. Queremos conocer tu historia y lo que te gustaría lograr, sin tecnicismos ni presiones.</p>
+    <h2 class="section-title">Cómo trabajamos</h2>
+    <div class="v2-steps">
+      <div class="v2-card">
+        <span class="v2-step-num">1</span>
+        <h3 style="height:auto;font-size:1.15em;">Diagnóstico</h3>
+        <p>Negocio, stack y meta (ventas, migración, conversión).</p>
       </div>
-      <div class="step" style="flex: 1 1 200px; max-width: 240px; text-align: center;">
-        <div class="step-icon" style="font-size:2.5em; color:#2563eb; margin-bottom:12px;">
-          <i class="fas fa-lightbulb"></i>
-        </div>
-        <h3>Propuesta clara y personalizada</h3>
-        <p>Te presentamos una solución pensada especialmente para ti, explicada en un lenguaje simple y transparente. Sin sorpresas ni letra pequeña: sabes desde el principio qué vamos a hacer y cómo te va a ayudar.</p>
+      <div class="v2-card">
+        <span class="v2-step-num">2</span>
+        <h3 style="height:auto;font-size:1.15em;">Propuesta cerrada</h3>
+        <p>Alcance, plazo y precio fijo o retainer — sin horas infinitas.</p>
       </div>
-      <div class="step" style="flex: 1 1 200px; max-width: 240px; text-align: center;">
-        <div class="step-icon" style="font-size:2.5em; color:#2563eb; margin-bottom:12px;">
-          <i class="fas fa-rocket"></i>
-        </div>
-        <h3>Implementamos juntos, paso a paso</h3>
-        <p>Nos encargamos de todo el proceso técnico, pero siempre en contacto contigo. Te mostramos avances frecuentes, respondemos tus dudas y ajustamos lo necesario para que te sientas seguro en cada etapa.</p>
+      <div class="v2-card">
+        <span class="v2-step-num">3</span>
+        <h3 style="height:auto;font-size:1.15em;">Implementación</h3>
+        <p>Sprints cortos, demos semanales, documentación útil.</p>
       </div>
-      <div class="step" style="flex: 1 1 200px; max-width: 240px; text-align: center;">
-        <div class="step-icon" style="font-size:2.5em; color:#2563eb; margin-bottom:12px;">
-          <i class="fas fa-chart-line"></i>
-        </div>
-        <h3>Resultados medibles y acompañamiento</h3>
-        <p>No te dejamos solo después de la entrega. Medimos juntos los resultados, te explicamos cada avance y seguimos a tu lado para optimizar y potenciar tu empresa a largo plazo.</p>
+      <div class="v2-card">
+        <span class="v2-step-num">4</span>
+        <h3 style="height:auto;font-size:1.15em;">Go-live</h3>
+        <p>Soporte acotado; cambios nuevos = proyecto aparte.</p>
       </div>
-    </div>
-    <div style="text-align:center; margin-top:32px;">
-      <a href="#contacto" class="cta-btn">Quiero empezar</a>
     </div>
   </section>
 
-  <!-- Contacto -->
+  <section class="section" id="sobre-mi">
+    <h2 class="section-title">Sobre mí</h2>
+    <div class="about-me" style="max-width:720px;margin:0 auto;padding:32px 24px;background:#f3f8fd;border-radius:18px;">
+      <p style="font-size:1.12em;line-height:1.75;color:#333;">
+        <strong>Product &amp; Development Manager</strong> con foco en e-commerce. Fundador de Letsdoia.
+        Experiencia en Argentina, Uruguay, Italia y clientes remotos en USA.
+        Combino arquitectura de integraciones con producto digital orientado a ingresos.
+      </p>
+      <div style="margin-top:20px;text-align:center;">
+        <a href="https://www.linkedin.com/in/rdarioj/" target="_blank" rel="noopener" class="cta-btn">Ver perfil en LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section certifications" style="max-width:900px;margin:48px auto;padding:32px 24px;background:#eaf3fb;border-radius:18px;">
+    <h2 class="section-title" style="color:#2563eb;">Certificaciones</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:center;">
+      <div style="text-align:center;"><img src="images/vtex.svg" alt="VTEX" style="height:48px;"><div style="font-weight:600;color:#2563eb;">VTEX Solution Architect</div></div>
+      <div style="text-align:center;"><img src="images/salesforce.svg" alt="Salesforce" style="height:48px;"><div style="font-weight:600;color:#2563eb;">Salesforce Ranger</div></div>
+      <div style="text-align:center;"><img src="images/scrum.svg" alt="Scrum" style="height:48px;"><div style="font-weight:600;color:#2563eb;">Scrum · Kanban · SAFe</div></div>
+      <div style="text-align:center;"><img src="images/mercadolibre.svg" alt="Mercado Libre" style="height:48px;"><div style="font-weight:600;color:#2563eb;">Mercado Libre Developer</div></div>
+    </div>
+  </section>
+
   <section class="section" id="contacto">
-    <h2 class="section-title">¿Listo para impulsar tu negocio?</h2>
-    <p style="text-align:center; font-size:1.18em; color:#2563eb; margin-bottom:32px;">
-      Cuéntanos tu idea, desafío o consulta.<br>
-      Te respondemos rápido y sin compromiso.
+    <h2 class="section-title">¿Tenés un proyecto o una tienda para lanzar?</h2>
+    <p style="text-align:center;font-size:1.1em;color:#2563eb;margin-bottom:28px;">
+      Contame qué vendés, qué plataforma usás y qué querés lograr en los próximos 90 días.
     </p>
-    <form class="contact-form" method="post" action="#">
+    <form class="contact-form" method="post" action="#" style="max-width:520px;margin:0 auto;">
       <label for="name">Nombre</label>
       <input type="text" id="name" name="name" required placeholder="Tu nombre">
-
-      <label for="company">Empresa</label>
-      <input type="text" id="company" name="company" placeholder="Nombre de tu empresa">
-
-      <label for="email">Correo electrónico</label>
+      <label for="email">Email</label>
       <input type="email" id="email" name="email" required placeholder="tu@email.com">
-
-      <label for="budget">Presupuesto estimado</label>
-      <div class="select-wrapper">
-        <select id="budget" name="budget" required>
-          <option value="" disabled selected>Elige tu rango de inversión...</option>
-          <option value="starter">Starter (1.000 - 3.000 USD)</option>
-          <option value="growth">Growth (3.000 - 5.000 USD)</option>
-          <option value="premium">Premium (5.000 - 10.000 USD)</option>
-          <option value="otro">Otro / No definido</option>
-        </select>
-        <span class="select-arrow"></span>
-      </div>
-      <small style="color:#444;display:block;margin-bottom:18px;">
-        Elige el rango que mejor se adapte a tu proyecto. Si no estás seguro, selecciona "Otro".
-      </small>
-
-      <label for="message">Cuéntanos más sobre tu idea</label>
-      <textarea id="message" name="message" rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
-
+      <label for="need">¿Qué necesitás?</label>
+      <select id="need" name="need" required>
+        <option value="" disabled selected>Elegí una opción</option>
+        <option value="dev">Desarrollo / integraciones</option>
+        <option value="consulting">Consultoría e-commerce</option>
+        <option value="tienda-agil">Tienda Ágil (Shopify)</option>
+        <option value="other">Otro</option>
+      </select>
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Breve descripción del proyecto"></textarea>
       <button type="submit" class="cta-btn" style="width:100%;">Enviar mensaje</button>
     </form>
-
-    <div style="text-align:center; margin-top:24px;">
-<a href="https://wa.me/541123032415" class="cta-btn" style="background:#116C3A;color:#fff;margin-bottom:10px;display:inline-block;">
-
-        <i class="fab fa-whatsapp"></i> WhatsApp Directo
+    <div style="text-align:center;margin-top:28px;">
+      <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="cta-btn" style="background:#7c3aed;margin:6px;">
+        <i class="fas fa-video"></i> Agendar en Calendly
       </a>
-      <a href="https://calendly.com/rdarioj" target="_blank" class="cta-btn" style="background:#7c3aed;color:#fff;margin-bottom:10px;display:inline-block;">
-        <i class="fas fa-video"></i> Agendar videollamada
+      <a href="https://wa.me/393921473519" class="cta-btn" style="background:#25D366;margin:6px;">
+        <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
-      <p style="margin-top:10px; color:#444;">
-        o escríbenos a <a href="mailto:info@letsdoia.com" style="color:#2563eb;">info@letsdoia.com</a>
-      </p>
+      <p style="margin-top:12px;"><a href="mailto:info@letsdoia.com" style="color:#2563eb;">info@letsdoia.com</a></p>
+    </div>
+    <div id="contact-success" style="display:none;text-align:center;color:#2563eb;margin-top:24px;">
+      <b>¡Gracias!</b> Te contactamos pronto.
     </div>
   </section>
 
-  <!-- Mensaje de éxito tras el envío -->
-  <div id="contact-success" style="display:none; text-align:center; color:#2563eb; font-size:1.15em; margin-top:24px;">
-    <b>¡Gracias por confiar en nosotros!</b><br>
-    En breve nos pondremos en contacto contigo.
-  </div>
-  
-  <!-- WhatsApp Sticky Button -->
-  <a href="https://wa.me/541123032415" class="whatsapp-sticky" title="WhatsApp Directo">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+  <a href="https://wa.me/393921473519" class="whatsapp-sticky" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-  <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2024 letsdoia.com | Agencia Global de Inteligencia Artificial</p>
-    <p>
-      <a href="#">Política de privacidad</a> | 
-      <a href="#">Términos y condiciones</a>
-    </p>
-    <p>
-      Síguenos:
-      <a href="https://twitter.com/">Twitter</a> |
-      <a href="https://facebook.com/">Facebook</a> |
-      <a href="https://instagram.com/">Instagram</a> |
-      <a href="https://github.com/">GitHub</a>
-    </p>
-<p style="font-size:0.9em;color:#444;margin-top:8px;">
-  <a href="https://storyset.com/technology" target="_blank" rel="noopener" style="color:#444;text-decoration:underline;">
-    Ilustraciones de tecnología por Storyset
-  </a>
-</p>
+    <p>&copy; 2026 Letsdoia · Rubén Darío Jiménez · E-commerce &amp; Shopify</p>
+    <p><a href="/tienda-agil/">Tienda Ágil</a> · <a href="https://www.linkedin.com/in/rdarioj/" target="_blank" rel="noopener">LinkedIn</a></p>
   </footer>
 
-<script src="assets/js/navbar-flags-selection.js"></script>
+  <a href="/old/" class="ld-site-switch ld-site-switch--old" title="Ver el sitio anterior (versión IA)">&#8592; Sitio anterior</a>
+
   <script>
-    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
       e.preventDefault();
       this.style.display = 'none';
       document.getElementById('contact-success').style.display = 'block';
+      if (typeof gtag === 'function') gtag('event', 'submit_contact_form', { event_category: 'Form' });
     });
   </script>
-  <!-- Google Analytics 4: Eventos personalizados para acciones clave -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // 1. Clic en "Solicita tu demo"
-    var demoBtns = document.querySelectorAll('a[href="#contacto"].cta-btn, a[href="#contacto"]:not(.cta-btn)');
-    demoBtns.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        gtag('event', 'click_solicita_demo', {
-          'event_category': 'CTA',
-          'event_label': 'Solicita tu demo'
-        });
-      });
-    });
-
-    // 2. Clic en WhatsApp Directo (todos los enlaces a wa.me)
-    var whatsappBtns = document.querySelectorAll('a[href^="https://wa.me/"]');
-    whatsappBtns.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        gtag('event', 'click_whatsapp', {
-          'event_category': 'CTA',
-          'event_label': 'WhatsApp Directo'
-        });
-      });
-    });
-
-    // 3. Clic en Calendly (todos los enlaces a calendly.com)
-    var calendlyBtns = document.querySelectorAll('a[href^="https://calendly.com/"]');
-    calendlyBtns.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        gtag('event', 'click_calendly', {
-          'event_category': 'CTA',
-          'event_label': 'Agendar videollamada'
-        });
-      });
-    });
-
-    // 4. Envío del formulario de contacto
-    var contactForm = document.querySelector('.contact-form');
-    if(contactForm){
-      contactForm.addEventListener('submit', function() {
-        gtag('event', 'submit_contact_form', {
-          'event_category': 'Formulario',
-          'event_label': 'Envío formulario de contacto'
-        });
-      });
-    }
-
-    // 5. Clic en email (mailto)
-    var emailLinks = document.querySelectorAll('a[href^="mailto:"]');
-    emailLinks.forEach(function(link) {
-      link.addEventListener('click', function() {
-        gtag('event', 'click_email', {
-          'event_category': 'Contacto',
-          'event_label': 'Clic en email'
-        });
-      });
-    });
-  });
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var loomContainer = document.getElementById('loom-video-lazy');
-  if ('IntersectionObserver' in window && loomContainer) {
-    let loaded = false;
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !loaded) {
-          loaded = true;
-          loomContainer.innerHTML =
-            '<iframe src="https://www.loom.com/embed/16a813fd3670431ca93b29327b243894" title="Demo letsdoia.com - Automatización con IA" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder="0"></iframe>';
-          obs.disconnect();
-        }
-      });
-    });
-    observer.observe(loomContainer);
-  } else if (loomContainer) {
-    // Fallback para navegadores antiguos
-    loomContainer.innerHTML =
-      '<iframe src="https://www.loom.com/embed/16a813fd3670431ca93b29327b243894" title="Demo letsdoia.com - Automatización con IA" allowfullscreen webkitallowfullscreen mozallowfullscreen frameborder="0"></iframe>';
-  }
-});
-</script>
 </body>
 </html>
