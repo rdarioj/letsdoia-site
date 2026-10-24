@@ -5,142 +5,210 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R59CBJ8VJP');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tienda Ágil — Shopify 2.0 con recién vistos, recomendaciones, carrito optimizado y más. Paquetes Starter, Growth y Pro. Letsdoia.">
-  <title>Tienda Ágil — Shopify con conversión lista para usar | Letsdoia</title>
-  <link rel="icon" href="../images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/site-v2.css">
-  <link rel="stylesheet" href="../assets/css/site-switcher.css">
+  <title>Tienda Ágil — Shopify listo para vender | Letsdoia</title>
+  <meta name="description" content="Tienda Ágil: Shopify 2.0 con recién vistos, recomendaciones, carrito con venta cruzada y semáforo de stock. Paquetes Starter, Growth y Pro con precio cerrado.">
+  <link rel="canonical" href="https://letsdoia.com/tienda-agil/">
+  <link rel="alternate" hreflang="es" href="https://letsdoia.com/tienda-agil/">
+  <link rel="alternate" hreflang="en" href="https://letsdoia.com/en/tienda-agil/">
+  <meta property="og:title" content="Tienda Ágil — Shopify listo para vender">
+  <meta property="og:image" content="https://letsdoia.com/images/og-letsdoia.jpg">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../images/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/brand.css">
+  <style>
+    .ta-is { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .ta-is > div { border-radius: var(--radius); padding: 34px; }
+    .ta-yes { background: rgba(46, 230, 160, .07); box-shadow: inset 0 0 0 1px rgba(46, 230, 160, .3); }
+    .ta-no { background: rgba(255, 46, 136, .06); box-shadow: inset 0 0 0 1px rgba(255, 46, 136, .26); }
+    .ta-is h3 { font-size: 26px; margin-bottom: 18px; }
+    .ta-yes h3 { color: var(--mint); } .ta-no h3 { color: var(--fire-2); }
+    .ta-is ul { margin: 0; padding-left: 20px; display: grid; gap: 12px; color: #d9d7d0; }
+    .ta-mods { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .ta-mod { background: var(--ink-2); border-radius: var(--radius); padding: 30px; box-shadow: inset 0 0 0 1px var(--line); display: flex; flex-direction: column; gap: 12px; }
+    .ta-mod h3 { font-size: 22px; }
+    .ta-mod p { margin: 0; color: var(--muted); font-size: 15.5px; }
+    .ta-mod .tag { align-self: flex-start; margin-top: auto; }
+    .ta-mod .tag.hot { color: var(--fire); box-shadow: inset 0 0 0 1px rgba(255, 91, 46, .5); }
+    .ta-note { color: var(--muted); font-size: 14px; max-width: 80ch; margin: 26px auto 0; text-align: center; }
+    @media (max-width: 1080px) { .ta-mods { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .ta-is, .ta-mods { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
-  <div class="navbar">
-    <a href="/" class="logo"><img src="../images/logo.png" alt="Letsdoia" style="height:56px;"></a>
-    <nav>
-      <a href="/#servicios" class="nav-link nav-desktop">Servicios</a>
-      <a href="/tienda-agil/" class="nav-link nav-desktop nav-link--product">Tienda Ágil</a>
-      <a href="#planes" class="nav-link nav-desktop">Planes</a>
-      <a href="#contacto" class="cta-nav">Pedir presupuesto</a>
-      <div class="navbar-flags">
-        <a href="/tienda-agil/" style="outline:2px solid #2563eb44;"><svg width="20" height="14" viewBox="0 0 24 16"><rect width="24" height="16" fill="#AA151B"/><rect y="4" width="24" height="8" fill="#F1BF00"/></svg></a>
-        <a href="/en/tienda-agil/" title="English" aria-label="English">
-          <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;" aria-hidden="true">
-            <rect width="24" height="16" fill="#B22234"/>
-            <g>
-              <rect width="24" height="2.2857" y="2.2857" fill="#FFF"/>
-              <rect width="24" height="2.2857" y="6.8571" fill="#FFF"/>
-              <rect width="24" height="2.2857" y="11.4286" fill="#FFF"/>
-            </g>
-            <rect width="9.6" height="8" fill="#3C3B6E"/>
-          </svg>
-        </a>
-      </div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a href="/" class="logo" aria-label="Letsdoia, inicio">letsdoia<i>.</i></a>
+    <nav class="nav__links" id="menu">
+      <a href="/#trabajo">Trabajo</a>
+      <a href="#modulos">Módulos</a>
+      <a href="#planes">Planes</a>
+      <a href="#faq">Preguntas</a>
+      <div class="lang"><a href="/tienda-agil/" aria-current="true">ES</a><a href="/en/tienda-agil/">EN</a></div>
+      <a href="#contacto" class="btn btn--fire">Agendar llamada <span class="arrow">→</span></a>
     </nav>
+    <button class="nav__burger" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false"><span></span><span></span></button>
   </div>
+</header>
 
-  <div class="navbar-flags-mobile" aria-label="Idioma">
-    <a href="/tienda-agil/" title="Español" aria-label="Español" style="outline:2px solid #2563eb44;">
-      <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;"><rect width="24" height="16" fill="#AA151B"/><rect y="4" width="24" height="8" fill="#F1BF00"/></svg>
-    </a>
-    <a href="/en/tienda-agil/" title="English" aria-label="English">
-      <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;" aria-hidden="true">
-        <rect width="24" height="16" fill="#B22234"/>
-        <g><rect width="24" height="2.2857" y="2.2857" fill="#FFF"/><rect width="24" height="2.2857" y="6.8571" fill="#FFF"/><rect width="24" height="2.2857" y="11.4286" fill="#FFF"/></g>
-        <rect width="9.6" height="8" fill="#3C3B6E"/>
-      </svg>
-    </a>
+<main>
+  <section class="hero">
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="cursor-glow"></div>
+    <div class="wrap hero__in">
+      <div>
+        <span class="eyebrow reveal">Tienda Ágil · Producto Letsdoia</span>
+        <h1 class="split">
+          <span class="line">Shopify listo</span>
+          <span class="line">para <span class="grad-text">vender,</span></span>
+          <span class="line">no solo para verse bien.</span>
+        </h1>
+        <p class="lead reveal" data-d="1">Un theme Shopify 2.0 con los módulos que ya probamos en retail de alto volumen: recién vistos, recomendaciones, carrito con venta cruzada y semáforo de stock. Vos traés marca y catálogo; nosotros lo implementamos con alcance cerrado.</p>
+        <div class="hero__cta reveal" data-d="2">
+          <a href="#planes" class="btn btn--fire">Ver planes y precios <span class="arrow">→</span></a>
+          <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="btn btn--ghost">Agendar llamada</a>
+        </div>
+        <div class="hero__proof reveal" data-d="3">
+          <div class="proof"><b>2–8 sem</b><span>según el plan</span></div>
+          <div class="proof"><b>USD 800</b><span>desde, pago único</span></div>
+          <div class="proof"><b>0</b><span>apps de terceros<br>para lo esencial</span></div>
+        </div>
+      </div>
+      <div class="stage reveal" data-d="2" aria-hidden="true">
+        <div class="device device--a">
+          <div class="device__bar"><i></i><i></i><i></i><em>racketcentral.com</em></div>
+          <img src="../images/work/rc-cart.jpg" alt="" width="1440" height="900">
+        </div>
+        <div class="device device--b">
+          <div class="device__bar"><i></i><i></i><i></i><em>swagrunning.com</em></div>
+          <img src="../images/work/swag-home-scroll.jpg" alt="" width="1440" height="900" loading="lazy">
+        </div>
+        <div class="device device--phone"><img src="../images/work/rc-home-m.jpg" alt="" width="780" height="1688" loading="lazy"></div>
+        <div class="chip chip--1"><div class="dot"><i class="fas fa-cart-shopping"></i></div><div><b>Carrito</b><span>con venta cruzada</span></div></div>
+        <div class="chip chip--2"><div class="dot"><i class="fas fa-signal"></i></div><div><b>Stock</b><span>semáforo en ficha</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:40px">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <span class="eyebrow reveal">Qué es</span>
+          <h2 class="title split" style="margin-top:18px"><span class="line">Claro desde</span><span class="line">el principio.</span></h2>
+        </div>
+      </div>
+      <div class="ta-is reveal">
+        <div class="ta-yes"><h3>Lo que sí es</h3><ul><li>Theme, implementación y checklist de lanzamiento</li><li>Shopify 2.0 con módulos de conversión ya probados</li><li>Paquetes con alcance y precio cerrados</li><li>Tu marca, tu catálogo y tus dominios</li></ul></div>
+        <div class="ta-no"><h3>Lo que no es</h3><ul><li>Un SaaS que se activa con un clic</li><li>Una copia de la tienda de otro cliente</li><li>Desarrollo ilimitado por un abono bajo</li><li>Una promesa de % de conversión garantizado</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="modulos" style="padding-top:20px">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <span class="eyebrow reveal">Módulos</span>
+          <h2 class="title split" style="margin-top:18px"><span class="line">Lo que tu tienda</span><span class="line">trae <span class="grad-text">de fábrica.</span></span></h2>
+        </div>
+        <p class="lead reveal">Cada módulo salió de una tienda real que hoy vende. Sin apps extra que pesen ni cobren por mes.</p>
+      </div>
+      <div class="ta-mods">
+        <div class="ta-mod reveal"><div class="svc__icon"><i class="fas fa-clock-rotate-left"></i></div><h3>Recién vistos</h3><p>El cliente retoma donde dejó, en la home y en cada ficha.</p><span class="tag">Starter+</span></div>
+        <div class="ta-mod reveal" data-d="1"><div class="svc__icon"><i class="fas fa-cart-plus"></i></div><h3>Carrito con venta cruzada</h3><p>Barra de envío gratis y «completá tu pack» según lo que ya eligió.</p><span class="tag">Starter+</span></div>
+        <div class="ta-mod reveal" data-d="2"><div class="svc__icon"><i class="fas fa-signal"></i></div><h3>Semáforo de stock</h3><p>Urgencia honesta en la ficha de producto, sin apps de terceros.</p><span class="tag">Starter+</span></div>
+        <div class="ta-mod reveal"><div class="svc__icon"><i class="fas fa-users-viewfinder"></i></div><h3>Home por segmento</h3><p>Un mensaje distinto para cada audiencia: deporte, rubro o tipo de cliente.</p><span class="tag hot">Growth+</span></div>
+        <div class="ta-mod reveal" data-d="1"><div class="svc__icon"><i class="fas fa-wand-magic-sparkles"></i></div><h3>Recomendaciones</h3><p>Productos relacionados en home y ficha para subir el ticket promedio.</p><span class="tag hot">Growth+</span></div>
+        <div class="ta-mod reveal" data-d="2"><div class="svc__icon"><i class="fas fa-bullhorn"></i></div><h3>Filtros y micrositio</h3><p>Filtros por descuento y envío gratis, más un micrositio para drops, ligas o partners.</p><span class="tag hot">Pro</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="planes">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <span class="eyebrow reveal">Planes</span>
+          <h2 class="title split" style="margin-top:18px"><span class="line">Precio cerrado,</span><span class="line"><span class="grad-text">sin sorpresas.</span></span></h2>
+        </div>
+      </div>
+      <div class="plans">
+        <div class="plan reveal">
+          <h3>Starter</h3>
+          <p class="who">Lo esencial que Shopify no trae de fábrica.</p>
+          <div class="price">USD 800<small> – 1.200</small></div>
+          <p class="fee">pago único · mantenimiento opcional USD 150–250/mes · 2–3 semanas</p>
+          <ul><li>Recién vistos</li><li>Semáforo de stock</li><li>Carrito con venta cruzada</li><li>Checklist de lanzamiento</li></ul>
+          <a href="/#contacto" class="btn btn--ghost">Quiero Starter</a>
+        </div>
+        <div class="plan plan--hot reveal" data-d="1" data-badge="El más elegido">
+          <h3>Growth</h3>
+          <p class="who">Para marcas que ya venden y quieren convertir más.</p>
+          <div class="price">USD 1.500<small> – 2.500</small></div>
+          <p class="fee">pago único · mantenimiento USD 250–400/mes · 3–5 semanas</p>
+          <ul><li>Todo lo de Starter</li><li>Home por segmento</li><li>Recomendaciones en home y producto</li><li>Auditoría inicial de conversión</li></ul>
+          <a href="/#contacto" class="btn btn--fire">Quiero Growth <span class="arrow">→</span></a>
+        </div>
+        <div class="plan reveal" data-d="2">
+          <h3>Pro</h3>
+          <p class="who">Campañas, filtros avanzados y catálogos grandes.</p>
+          <div class="price">USD 3.000<small>+</small></div>
+          <p class="fee">pago único · mantenimiento USD 400–600/mes · 6–8 semanas</p>
+          <ul><li>Todo lo de Growth</li><li>Filtros por descuento y envío</li><li>Un micrositio de campaña</li><li>Sincronización de descuentos*</li></ul>
+          <a href="/#contacto" class="btn btn--ghost">Quiero Pro</a>
+        </div>
+      </div>
+      <p class="ta-note">*Según el stack (Shopify Flow, Search &amp; Discovery). El mantenimiento cubre theme y caídas; el desarrollo nuevo se cotiza aparte.</p>
+    </div>
+  </section>
+
+  <section class="sec light" id="faq">
+    <div class="wrap">
+      <span class="eyebrow reveal">Preguntas frecuentes</span>
+      <h2 class="title split" style="margin:18px 0 40px"><span class="line">Antes de arrancar.</span></h2>
+      <div class="faq reveal">
+        <details><summary>¿Necesito Shopify Plus?</summary><p>No para Starter ni Growth. Pro puede requerir Plus según las funciones que elijas.</p></details>
+        <details><summary>¿Puedo migrar desde otra plataforma?</summary><p>Sí. Lo armamos como proyecto de migración más el setup de Tienda Ágil.</p></details>
+        <details><summary>¿Incluye diseño de marca?</summary><p>Aplicamos tu logo y tus colores. El diseño gráfico premium es un adicional.</p></details>
+        <details><summary>¿Hay demo?</summary><p>Sí. En la llamada te mostramos el recorrido del theme y casos reales en vivo.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contacto">
+    <div class="hero__glow" style="top:-300px;right:-300px"></div>
+    <div class="wrap" style="text-align:center;position:relative">
+      <span class="eyebrow reveal">Hablemos</span>
+      <h2 class="split" style="margin:18px auto 24px"><span class="line">¿Listo para una tienda</span><span class="line">que <span class="grad-text">venda?</span></span></h2>
+      <p class="lead reveal" style="margin:0 auto 34px">30 minutos para ver tu catálogo y decirte qué plan te conviene. Sin compromiso.</p>
+      <div class="hero__cta reveal" style="justify-content:center">
+        <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="btn btn--fire">Agendar llamada Tienda Ágil <span class="arrow">→</span></a>
+        <a href="https://wa.me/393921473519?text=Hola%20Letsdoia%2C%20me%20interesa%20Tienda%20%C3%81gil" target="_blank" rel="noopener" class="btn btn--wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__big" aria-hidden="true">letsdoia<i>.</i></p>
+    <div class="foot__in">
+      <div>© 2026 Letsdoia · Tienda Ágil</div>
+      <nav><a href="/">Inicio</a><a href="/#trabajo">Trabajo</a><a href="/#contacto">Contacto</a><a href="/anterior/tienda-agil/">Sitio anterior</a></nav>
+    </div>
   </div>
+</footer>
 
-  <section class="hero hero-white" style="padding:60px 20px 40px;text-align:center;">
-    <span class="hero-label">Producto Shopify · Letsdoia</span>
-    <h1 style="max-width:800px;margin:0 auto 20px;">Tienda Ágil: Shopify listo para convertir, no solo para verse bien</h1>
-    <p style="max-width:720px;margin:0 auto;font-size:1.15em;color:#444;line-height:1.7;">
-      Base de theme 2.0 con módulos probados en retail de alto volumen: personalización, recencia, recomendaciones, carrito inteligente y urgencia de stock.
-      Vos traés marca y catálogo; implementamos con scope cerrado.
-    </p>
-    <div class="v2-hero-actions" style="justify-content:center;margin-top:28px;">
-      <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="cta-btn">Agendar llamada Tienda Ágil</a>
-      <a href="#planes" class="cta-btn cta-btn--secondary">Ver planes</a>
-    </div>
-  </section>
+<a class="wa-float" href="https://wa.me/393921473519?text=Hola%20Letsdoia%2C%20me%20interesa%20Tienda%20%C3%81gil" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-  <section class="section" style="max-width:900px;">
-    <h2 class="section-title">Qué es y qué no es</h2>
-    <div class="v2-grid-3" style="grid-template-columns:1fr 1fr;">
-      <div class="v2-card" style="border-color:#22c55e;">
-        <h3 style="color:#16a34a;">✓ Qué SÍ es</h3>
-        <ul><li>Theme + implementación + checklist</li><li>Shopify 2.0 con módulos de conversión</li><li>Paquetes con scope cerrado</li></ul>
-      </div>
-      <div class="v2-card" style="border-color:#ef4444;">
-        <h3 style="color:#dc2626;">✗ Qué NO es</h3>
-        <ul><li>SaaS multi-tenant en un clic</li><li>Clon de otra marca cliente</li><li>Desarrollo ilimitado por abono bajo</li></ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2 class="section-title">Módulos de conversión</h2>
-    <div class="v2-table-wrap">
-      <table class="v2-table">
-        <thead><tr><th>Módulo</th><th>Beneficio</th><th>Plan</th></tr></thead>
-        <tbody>
-          <tr><td>Recién vistos</td><td>El cliente retoma donde dejó</td><td>Starter+</td></tr>
-          <tr><td>Home por segmento</td><td>Mensaje por audiencia</td><td>Growth+</td></tr>
-          <tr><td>Recomendaciones</td><td>Mayor ticket promedio</td><td>Growth+</td></tr>
-          <tr><td>Carrito optimizado</td><td>Menos abandono</td><td>Starter+</td></tr>
-          <tr><td>Semáforo stock PDP</td><td>Urgencia sin apps extra</td><td>Starter+</td></tr>
-          <tr><td>Filtros oferta / envío gratis</td><td>Compra orientada a promos</td><td>Pro</td></tr>
-          <tr><td>Micrositio campaña</td><td>Drops, ligas, partners</td><td>Pro</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="section" id="planes">
-    <h2 class="section-title">Planes</h2>
-    <div class="v2-pricing">
-      <div class="v2-price-card">
-        <h3>Starter</h3>
-        <p>Lo esencial que Shopify no trae nativo</p>
-        <div class="v2-price">USD 800–1.200<small>setup · único</small></div>
-        <p style="color:#64748b;">+ USD 150–250/mes mantenimiento opcional</p>
-        <ul style="text-align:left;margin-top:16px;"><li>Recién vistos</li><li>Semáforo stock</li><li>Carrito cross-sell lite</li><li>Go-live checklist</li></ul>
-      </div>
-      <div class="v2-price-card v2-price-card--featured">
-        <h3>Growth</h3>
-        <p>Para marcas que ya venden y quieren más conversión</p>
-        <div class="v2-price">USD 1.500–2.500<small>setup · único</small></div>
-        <p style="color:#64748b;">+ USD 250–400/mes</p>
-        <ul style="text-align:left;margin-top:16px;"><li>Todo Starter</li><li>Home por segmento</li><li>Recomendaciones home/PDP</li><li>Auditoría inicial</li></ul>
-      </div>
-      <div class="v2-price-card">
-        <h3>Pro</h3>
-        <p>Campañas y filtros avanzados</p>
-        <div class="v2-price">USD 3.000+<small>setup · único</small></div>
-        <p style="color:#64748b;">+ USD 400–600/mes</p>
-        <ul style="text-align:left;margin-top:16px;"><li>Todo Growth</li><li>Filtros descuento/envío</li><li>1 micrositio</li><li>Sync descuentos*</li></ul>
-      </div>
-    </div>
-    <p class="v2-note">*Según stack (Workflows, Search &amp; Discovery). Mantenimiento = theme y caídas; desarrollo nuevo se presupuesta aparte. Tiempos: Starter 2–3 sem · Growth 3–5 · Pro 6–8.</p>
-  </section>
-
-  <section class="section v2-faq" style="max-width:720px;">
-    <h2 class="section-title">Preguntas frecuentes</h2>
-    <details><summary>¿Necesito Shopify Plus?</summary><p>No para Starter/Growth; Pro puede requerir Plus según funciones.</p></details>
-    <details><summary>¿Puedo migrar desde otra plataforma?</summary><p>Sí, como proyecto de consultoría + setup Tienda Ágil.</p></details>
-    <details><summary>¿Incluye diseño de marca?</summary><p>Logo y colores sí; diseño gráfico premium es add-on.</p></details>
-    <details><summary>¿Hay demo?</summary><p>En la llamada mostramos el recorrido del theme y casos reales (bajo NDA).</p></details>
-  </section>
-
-  <section class="section" id="contacto" style="text-align:center;">
-    <h2 class="section-title">¿Listo para una tienda que convierta?</h2>
-    <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="cta-btn" style="font-size:1.15em;">Agendar llamada Tienda Ágil</a>
-    <p class="v2-note" style="margin-top:20px;">Basado en implementaciones reales en Shopify USA · Sin % de conversión garantizado</p>
-    <p style="margin-top:12px;"><a href="/">← Volver al inicio</a></p>
-  </section>
-
-  <footer class="footer"><p>&copy; 2026 Letsdoia · Tienda Ágil</p></footer>
-  <a href="/old/" class="ld-site-switch ld-site-switch--old">&#8592; Sitio anterior</a>
+<script>window.LD = { lang: 'es', locale: 'es-AR' };</script>
+<script src="../assets/js/site.js" defer></script>
 </body>
 </html>

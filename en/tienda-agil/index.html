@@ -5,94 +5,210 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R59CBJ8VJP');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tienda Ágil — Conversion-ready Shopify 2.0 with recently viewed, recommendations, optimized cart. Starter, Growth, Pro packages.">
-  <title>Tienda Ágil — Conversion-ready Shopify | Letsdoia</title>
-  <link rel="icon" href="../../images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/main.css">
-  <link rel="stylesheet" href="../../assets/css/site-v2.css">
-  <link rel="stylesheet" href="../../assets/css/site-switcher.css">
+  <title>Tienda Ágil — Shopify that's ready to sell | Letsdoia</title>
+  <meta name="description" content="Tienda Ágil: Shopify 2.0 with recently viewed, recommendations, a cross-sell cart and stock indicators. Starter, Growth and Pro packages at a fixed price.">
+  <link rel="canonical" href="https://letsdoia.com/en/tienda-agil/">
+  <link rel="alternate" hreflang="es" href="https://letsdoia.com/tienda-agil/">
+  <link rel="alternate" hreflang="en" href="https://letsdoia.com/en/tienda-agil/">
+  <meta property="og:title" content="Tienda Ágil — Shopify that's ready to sell">
+  <meta property="og:image" content="https://letsdoia.com/images/og-letsdoia.jpg">
+  <link rel="icon" href="../../images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../images/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/css/brand.css">
+  <style>
+    .ta-is { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .ta-is > div { border-radius: var(--radius); padding: 34px; }
+    .ta-yes { background: rgba(46, 230, 160, .07); box-shadow: inset 0 0 0 1px rgba(46, 230, 160, .3); }
+    .ta-no { background: rgba(255, 46, 136, .06); box-shadow: inset 0 0 0 1px rgba(255, 46, 136, .26); }
+    .ta-is h3 { font-size: 26px; margin-bottom: 18px; }
+    .ta-yes h3 { color: var(--mint); } .ta-no h3 { color: var(--fire-2); }
+    .ta-is ul { margin: 0; padding-left: 20px; display: grid; gap: 12px; color: #d9d7d0; }
+    .ta-mods { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .ta-mod { background: var(--ink-2); border-radius: var(--radius); padding: 30px; box-shadow: inset 0 0 0 1px var(--line); display: flex; flex-direction: column; gap: 12px; }
+    .ta-mod h3 { font-size: 22px; }
+    .ta-mod p { margin: 0; color: var(--muted); font-size: 15.5px; }
+    .ta-mod .tag { align-self: flex-start; margin-top: auto; }
+    .ta-mod .tag.hot { color: var(--fire); box-shadow: inset 0 0 0 1px rgba(255, 91, 46, .5); }
+    .ta-note { color: var(--muted); font-size: 14px; max-width: 80ch; margin: 26px auto 0; text-align: center; }
+    @media (max-width: 1080px) { .ta-mods { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .ta-is, .ta-mods { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
-  <div class="navbar">
-    <a href="/en/" class="logo"><img src="../../images/logo.png" alt="Letsdoia" style="height:56px;"></a>
-    <nav>
-      <a href="/en/#services" class="nav-link nav-desktop">Services</a>
-      <a href="/en/tienda-agil/" class="nav-link nav-desktop nav-link--product">Tienda Ágil</a>
-      <a href="#plans" class="nav-link nav-desktop">Plans</a>
-      <a href="#contact" class="cta-nav">Get a quote</a>
-      <div class="navbar-flags">
-        <a href="/tienda-agil/"><svg width="20" height="14" viewBox="0 0 24 16"><rect width="24" height="16" fill="#AA151B"/><rect y="4" width="24" height="8" fill="#F1BF00"/></svg></a>
-        <a href="/en/tienda-agil/" title="English" aria-label="English" style="outline:2px solid #2563eb44;">
-          <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;" aria-hidden="true">
-            <rect width="24" height="16" fill="#B22234"/>
-            <g>
-              <rect width="24" height="2.2857" y="2.2857" fill="#FFF"/>
-              <rect width="24" height="2.2857" y="6.8571" fill="#FFF"/>
-              <rect width="24" height="2.2857" y="11.4286" fill="#FFF"/>
-            </g>
-            <rect width="9.6" height="8" fill="#3C3B6E"/>
-          </svg>
-        </a>
-      </div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a href="/en/" class="logo" aria-label="Letsdoia, home">letsdoia<i>.</i></a>
+    <nav class="nav__links" id="menu">
+      <a href="/en/#work">Work</a>
+      <a href="#modules">Modules</a>
+      <a href="#plans">Plans</a>
+      <a href="#faq">FAQ</a>
+      <div class="lang"><a href="/tienda-agil/">ES</a><a href="/en/tienda-agil/" aria-current="true">EN</a></div>
+      <a href="#contact" class="btn btn--fire">Book a call <span class="arrow">→</span></a>
     </nav>
+    <button class="nav__burger" aria-label="Open menu" aria-controls="menu" aria-expanded="false"><span></span><span></span></button>
   </div>
+</header>
 
-  <div class="navbar-flags-mobile" aria-label="Language">
-    <a href="/tienda-agil/" title="Español" aria-label="Español">
-      <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;"><rect width="24" height="16" fill="#AA151B"/><rect y="4" width="24" height="8" fill="#F1BF00"/></svg>
-    </a>
-    <a href="/en/tienda-agil/" title="English" aria-label="English" style="outline:2px solid #2563eb44;">
-      <svg width="20" height="14" viewBox="0 0 24 16" style="display:block;" aria-hidden="true">
-        <rect width="24" height="16" fill="#B22234"/>
-        <g><rect width="24" height="2.2857" y="2.2857" fill="#FFF"/><rect width="24" height="2.2857" y="6.8571" fill="#FFF"/><rect width="24" height="2.2857" y="11.4286" fill="#FFF"/></g>
-        <rect width="9.6" height="8" fill="#3C3B6E"/>
-      </svg>
-    </a>
-  </div>
-
-  <section class="hero hero-white" style="padding:60px 20px 40px;text-align:center;">
-    <span class="hero-label">Shopify product · Letsdoia</span>
-    <h1 style="max-width:800px;margin:0 auto 20px;">Tienda Ágil: conversion-ready Shopify, not just a pretty theme</h1>
-    <p style="max-width:720px;margin:0 auto;font-size:1.15em;color:#444;line-height:1.7;">
-      Shopify 2.0 foundation with modules proven in high-volume retail: personalization, recently viewed, recommendations, smart cart, and stock urgency on PDP.
-    </p>
-    <div class="v2-hero-actions" style="justify-content:center;margin-top:28px;">
-      <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="cta-btn">Book Tienda Ágil call</a>
-      <a href="#plans" class="cta-btn cta-btn--secondary">View plans</a>
+<main>
+  <section class="hero">
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="cursor-glow"></div>
+    <div class="wrap hero__in">
+      <div>
+        <span class="eyebrow reveal">Tienda Ágil · A Letsdoia product</span>
+        <h1 class="split">
+          <span class="line">Shopify that's</span>
+          <span class="line">ready to <span class="grad-text">sell,</span></span>
+          <span class="line">not just to look good.</span>
+        </h1>
+        <p class="lead reveal" data-d="1">A Shopify 2.0 theme with the modules we've already proven in high-volume retail: recently viewed, recommendations, a cross-sell cart and stock indicators. You bring the brand and catalog; we implement it with a fixed scope.</p>
+        <div class="hero__cta reveal" data-d="2">
+          <a href="#plans" class="btn btn--fire">See plans and pricing <span class="arrow">→</span></a>
+          <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="btn btn--ghost">Book a call</a>
+        </div>
+        <div class="hero__proof reveal" data-d="3">
+          <div class="proof"><b>2–8 wks</b><span>depending on the plan</span></div>
+          <div class="proof"><b>USD 800</b><span>from, one-time</span></div>
+          <div class="proof"><b>0</b><span>third-party apps<br>for the essentials</span></div>
+        </div>
+      </div>
+      <div class="stage reveal" data-d="2" aria-hidden="true">
+        <div class="device device--a">
+          <div class="device__bar"><i></i><i></i><i></i><em>racketcentral.com</em></div>
+          <img src="../../images/work/rc-cart.jpg" alt="" width="1440" height="900">
+        </div>
+        <div class="device device--b">
+          <div class="device__bar"><i></i><i></i><i></i><em>swagrunning.com</em></div>
+          <img src="../../images/work/swag-home-scroll.jpg" alt="" width="1440" height="900" loading="lazy">
+        </div>
+        <div class="device device--phone"><img src="../../images/work/rc-home-m.jpg" alt="" width="780" height="1688" loading="lazy"></div>
+        <div class="chip chip--1"><div class="dot"><i class="fas fa-cart-shopping"></i></div><div><b>Cart</b><span>with cross-sell</span></div></div>
+        <div class="chip chip--2"><div class="dot"><i class="fas fa-signal"></i></div><div><b>Stock</b><span>indicator on PDP</span></div></div>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="plans">
-    <h2 class="section-title">Plans</h2>
-    <div class="v2-pricing">
-      <div class="v2-price-card">
-        <h3>Starter</h3>
-        <div class="v2-price">USD 800–1,200<small>one-time setup</small></div>
-        <p>Recently viewed · Stock urgency · Lite cart cross-sell · Go-live checklist</p>
+  <section class="sec" style="padding-top:40px">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <span class="eyebrow reveal">What it is</span>
+          <h2 class="title split" style="margin-top:18px"><span class="line">Clear from</span><span class="line">the start.</span></h2>
+        </div>
       </div>
-      <div class="v2-price-card v2-price-card--featured">
-        <h3>Growth</h3>
-        <div class="v2-price">USD 1,500–2,500<small>one-time setup</small></div>
-        <p>All Starter · Segmented home · PDP/home recommendations · Conversion audit</p>
-      </div>
-      <div class="v2-price-card">
-        <h3>Pro</h3>
-        <div class="v2-price">USD 3,000+<small>one-time setup</small></div>
-        <p>All Growth · Promo/shipping filters · 1 campaign microsite</p>
+      <div class="ta-is reveal">
+        <div class="ta-yes"><h3>What it is</h3><ul><li>Theme, implementation and a launch checklist</li><li>Shopify 2.0 with proven conversion modules</li><li>Packages with fixed scope and price</li><li>Your brand, your catalog, your domains</li></ul></div>
+        <div class="ta-no"><h3>What it isn't</h3><ul><li>One-click SaaS</li><li>A copy of another client's store</li><li>Unlimited development for a low retainer</li><li>A guaranteed conversion percentage</li></ul></div>
       </div>
     </div>
-    <p class="v2-note">Monthly maintenance optional. New development quoted separately. <a href="/tienda-agil/">Full details in Spanish</a>.</p>
   </section>
 
-  <section class="section" id="contact" style="text-align:center;">
-    <h2 class="section-title">Ready to launch?</h2>
-    <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="cta-btn">Book a call</a>
-    <p style="margin-top:16px;"><a href="/en/">← Back to home</a></p>
+  <section class="sec" id="modules" style="padding-top:20px">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <span class="eyebrow reveal">Modules</span>
+          <h2 class="title split" style="margin-top:18px"><span class="line">What your store</span><span class="line">ships <span class="grad-text">with.</span></span></h2>
+        </div>
+        <p class="lead reveal">Every module comes from a real store that sells today. No extra apps slowing you down or billing you monthly.</p>
+      </div>
+      <div class="ta-mods">
+        <div class="ta-mod reveal"><div class="svc__icon"><i class="fas fa-clock-rotate-left"></i></div><h3>Recently viewed</h3><p>Shoppers pick up where they left off, on the homepage and every product page.</p><span class="tag">Starter+</span></div>
+        <div class="ta-mod reveal" data-d="1"><div class="svc__icon"><i class="fas fa-cart-plus"></i></div><h3>Cross-sell cart</h3><p>Free-shipping bar and “complete your pack” based on what's already in the cart.</p><span class="tag">Starter+</span></div>
+        <div class="ta-mod reveal" data-d="2"><div class="svc__icon"><i class="fas fa-signal"></i></div><h3>Stock indicator</h3><p>Honest urgency on the product page, no third-party apps.</p><span class="tag">Starter+</span></div>
+        <div class="ta-mod reveal"><div class="svc__icon"><i class="fas fa-users-viewfinder"></i></div><h3>Segmented homepage</h3><p>A different message for each audience: sport, category or customer type.</p><span class="tag hot">Growth+</span></div>
+        <div class="ta-mod reveal" data-d="1"><div class="svc__icon"><i class="fas fa-wand-magic-sparkles"></i></div><h3>Recommendations</h3><p>Related products on home and product pages to raise average order value.</p><span class="tag hot">Growth+</span></div>
+        <div class="ta-mod reveal" data-d="2"><div class="svc__icon"><i class="fas fa-bullhorn"></i></div><h3>Filters and microsite</h3><p>Discount and free-shipping filters, plus a microsite for drops, leagues or partners.</p><span class="tag hot">Pro</span></div>
+      </div>
+    </div>
   </section>
 
-  <footer class="footer"><p>&copy; 2026 Letsdoia · Tienda Ágil</p></footer>
-  <a href="/old/" class="ld-site-switch ld-site-switch--old">&#8592; Previous site</a>
+  <section class="sec" id="plans">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <span class="eyebrow reveal">Plans</span>
+          <h2 class="title split" style="margin-top:18px"><span class="line">Fixed price,</span><span class="line"><span class="grad-text">no surprises.</span></span></h2>
+        </div>
+      </div>
+      <div class="plans">
+        <div class="plan reveal">
+          <h3>Starter</h3>
+          <p class="who">The essentials Shopify doesn't ship with.</p>
+          <div class="price">USD 800<small> – 1,200</small></div>
+          <p class="fee">one-time · optional maintenance USD 150–250/mo · 2–3 weeks</p>
+          <ul><li>Recently viewed</li><li>Stock indicator</li><li>Cart with cross-sell</li><li>Launch checklist</li></ul>
+          <a href="/en/#contact" class="btn btn--ghost">I want Starter</a>
+        </div>
+        <div class="plan plan--hot reveal" data-d="1" data-badge="Most popular">
+          <h3>Growth</h3>
+          <p class="who">For brands that already sell and want to convert more.</p>
+          <div class="price">USD 1,500<small> – 2,500</small></div>
+          <p class="fee">one-time · maintenance USD 250–400/mo · 3–5 weeks</p>
+          <ul><li>Everything in Starter</li><li>Segmented homepage</li><li>Recommendations on home and product</li><li>Initial conversion audit</li></ul>
+          <a href="/en/#contact" class="btn btn--fire">I want Growth <span class="arrow">→</span></a>
+        </div>
+        <div class="plan reveal" data-d="2">
+          <h3>Pro</h3>
+          <p class="who">Campaigns, advanced filters and large catalogs.</p>
+          <div class="price">USD 3,000<small>+</small></div>
+          <p class="fee">one-time · maintenance USD 400–600/mo · 6–8 weeks</p>
+          <ul><li>Everything in Growth</li><li>Discount and shipping filters</li><li>One campaign microsite</li><li>Discount sync*</li></ul>
+          <a href="/en/#contact" class="btn btn--ghost">I want Pro</a>
+        </div>
+      </div>
+      <p class="ta-note">*Depending on the stack (Shopify Flow, Search &amp; Discovery). Maintenance covers the theme and outages; new development is quoted separately.</p>
+    </div>
+  </section>
+
+  <section class="sec light" id="faq">
+    <div class="wrap">
+      <span class="eyebrow reveal">FAQ</span>
+      <h2 class="title split" style="margin:18px 0 40px"><span class="line">Before we start.</span></h2>
+      <div class="faq reveal">
+        <details><summary>Do I need Shopify Plus?</summary><p>Not for Starter or Growth. Pro may require Plus depending on the features you choose.</p></details>
+        <details><summary>Can I migrate from another platform?</summary><p>Yes. We scope it as a migration project plus the Tienda Ágil setup.</p></details>
+        <details><summary>Does it include brand design?</summary><p>We apply your logo and colors. Premium graphic design is an add-on.</p></details>
+        <details><summary>Is there a demo?</summary><p>Yes. On the call we walk you through the theme and real cases, live.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact">
+    <div class="hero__glow" style="top:-300px;right:-300px"></div>
+    <div class="wrap" style="text-align:center;position:relative">
+      <span class="eyebrow reveal">Let's talk</span>
+      <h2 class="split" style="margin:18px auto 24px"><span class="line">Ready for a store</span><span class="line">that <span class="grad-text">sells?</span></span></h2>
+      <p class="lead reveal" style="margin:0 auto 34px">30 minutes to look at your catalog and tell you which plan fits. No commitment.</p>
+      <div class="hero__cta reveal" style="justify-content:center">
+        <a href="https://calendly.com/rdarioj" target="_blank" rel="noopener" class="btn btn--fire">Book a Tienda Ágil call <span class="arrow">→</span></a>
+        <a href="https://wa.me/393921473519?text=Hi%20Letsdoia%2C%20I%27m%20interested%20in%20Tienda%20%C3%81gil" target="_blank" rel="noopener" class="btn btn--wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__big" aria-hidden="true">letsdoia<i>.</i></p>
+    <div class="foot__in">
+      <div>© 2026 Letsdoia · Tienda Ágil</div>
+      <nav><a href="/en/">Home</a><a href="/en/#work">Work</a><a href="/en/#contact">Contact</a><a href="/anterior/en/tienda-agil/">Previous site</a></nav>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/393921473519?text=Hi%20Letsdoia%2C%20I%27m%20interested%20in%20Tienda%20%C3%81gil" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script>window.LD = { lang: 'en', locale: 'en-US' };</script>
+<script src="../../assets/js/site.js" defer></script>
 </body>
 </html>

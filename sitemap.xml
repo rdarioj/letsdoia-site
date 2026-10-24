@@ -6,6 +6,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://letsdoia.com/it/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://letsdoia.com/en/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
